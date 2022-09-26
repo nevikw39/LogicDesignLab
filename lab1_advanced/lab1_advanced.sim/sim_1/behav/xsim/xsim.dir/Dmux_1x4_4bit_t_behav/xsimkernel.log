@@ -2,3 +2,6 @@ Running: xsim.dir/Dmux_1x4_4bit_t_behav/xsimk -simmode gui -wdb Dmux_1x4_4bit_t_
 Design successfully loaded
 Design Loading Memory Usage: 33288 KB (Peak: 33852 KB)
 Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 115024 KB (Peak: 172556 KB)
+Simulation CPU Usage: 60 ms
