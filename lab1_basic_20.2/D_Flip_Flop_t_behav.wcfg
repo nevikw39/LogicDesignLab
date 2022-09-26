@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D_Flip_Flop_t_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="D_Flip_Flop_t" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9581fs"></ZoomEndTime>
+      <Cursor1Time time="6000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="90"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject type="logic" fp_name="/D_Flip_Flop_t/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/D_Flip_Flop_t/d">
+      <obj_property name="ElementShortName">d</obj_property>
+      <obj_property name="ObjectShortName">d</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/D_Flip_Flop_t/q">
+      <obj_property name="ElementShortName">q</obj_property>
+      <obj_property name="ObjectShortName">q</obj_property>
+   </wvobject>
+</wave_config>
