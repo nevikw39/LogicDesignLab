@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Team30
+// Engineer: nevikw39
 // 
 // Create Date: 09/26/2022 02:56:11 PM
-// Design Name: 
+// Design Name: Dmux_1x4_4bit test bench
 // Module Name: Lab1_Team30_Dmux_1x4_4bit_t
-// Project Name: 
+// Project Name: Lab1 Advanced
 // Target Devices: 
 // Tool Versions: 
 // Description: 
