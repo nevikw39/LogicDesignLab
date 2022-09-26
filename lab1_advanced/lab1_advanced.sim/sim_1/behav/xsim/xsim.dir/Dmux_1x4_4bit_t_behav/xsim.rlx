@@ -1,0 +1,12 @@
+
+{ 
+    crc :  17238691616789052300  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 261661a4a7444a9a96403677ca79b76a --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dmux_1x4_4bit_t_behav xil_defaultlib.Dmux_1x4_4bit_t xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:20:35" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/Dmux_1x4_4bit_t_behav/xsimk\"   \"xsim.dir/Dmux_1x4_4bit_t_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/Dmux_1x4_4bit_t_behav/obj/xsim_1.lnx64.o\" -L\"/home/nevikw39/Xilinx/Vivado/2020.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
