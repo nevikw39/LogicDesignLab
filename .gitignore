@@ -84,3 +84,9 @@
 !*.elf
 !*.bmm
 !*.xmp
+
+# nevikw39
+
+!*.circ
+!*.png
+
