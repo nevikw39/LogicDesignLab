@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1664358565">
-  <File Type="ROUTE-PWR" Name="Crossbar_2x2_4bit_fpga_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Crossbar_2x2_4bit_fpga.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="Crossbar_2x2_4bit_fpga_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Crossbar_2x2_4bit_fpga_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="Crossbar_2x2_4bit_fpga.msk"/>
-  <File Type="ROUTE-CLK" Name="Crossbar_2x2_4bit_fpga_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="Crossbar_2x2_4bit_fpga.vdi"/>
   <File Type="BG-BIT" Name="Crossbar_2x2_4bit_fpga.bit"/>
   <File Type="BG-DRC" Name="Crossbar_2x2_4bit_fpga.drc"/>
@@ -14,33 +11,18 @@
   <File Type="BITSTR-RBT" Name="Crossbar_2x2_4bit_fpga.rbt"/>
   <File Type="BITSTR-NKY" Name="Crossbar_2x2_4bit_fpga.nky"/>
   <File Type="BITSTR-BMM" Name="Crossbar_2x2_4bit_fpga_bd.bmm"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Crossbar_2x2_4bit_fpga_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-MMI" Name="Crossbar_2x2_4bit_fpga.mmi"/>
   <File Type="BITSTR-SYSDEF" Name="Crossbar_2x2_4bit_fpga.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Crossbar_2x2_4bit_fpga.ltx"/>
+  <File Type="RCFI_FILE" Name="Crossbar_2x2_4bit_fpga.rcfi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="Crossbar_2x2_4bit_fpga_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Crossbar_2x2_4bit_fpga.hwdef"/>
-  <File Type="PLACE-IO" Name="Crossbar_2x2_4bit_fpga_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="Crossbar_2x2_4bit_fpga_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Crossbar_2x2_4bit_fpga_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="Crossbar_2x2_4bit_fpga_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Crossbar_2x2_4bit_fpga_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="Crossbar_2x2_4bit_fpga_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Crossbar_2x2_4bit_fpga_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Crossbar_2x2_4bit_fpga_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="Crossbar_2x2_4bit_fpga_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Crossbar_2x2_4bit_fpga_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="Crossbar_2x2_4bit_fpga_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="Crossbar_2x2_4bit_fpga_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Crossbar_2x2_4bit_fpga_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Crossbar_2x2_4bit_fpga_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Crossbar_2x2_4bit_fpga_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Crossbar_2x2_4bit_fpga_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Crossbar_2x2_4bit_fpga_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Crossbar_2x2_4bit_fpga_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Crossbar_2x2_4bit_fpga_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="Crossbar_2x2_4bit_fpga_opt.dcp"/>
   <File Type="PLACE-DCP" Name="Crossbar_2x2_4bit_fpga_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="Crossbar_2x2_4bit_fpga_pwropt.dcp"/>
@@ -48,11 +30,7 @@
   <File Type="PHYSOPT-DCP" Name="Crossbar_2x2_4bit_fpga_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Crossbar_2x2_4bit_fpga_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Crossbar_2x2_4bit_fpga_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Crossbar_2x2_4bit_fpga_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Crossbar_2x2_4bit_fpga_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Crossbar_2x2_4bit_fpga_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="Crossbar_2x2_4bit_fpga.pdi"/>
-  <File Type="RCFI_FILE" Name="Crossbar_2x2_4bit_fpga.rcfi"/>
   <File Type="CFI_FILE" Name="Crossbar_2x2_4bit_fpga.cfi"/>
   <File Type="RNPI_FILE" Name="Crossbar_2x2_4bit_fpga.rnpi"/>
   <File Type="NPI_FILE" Name="Crossbar_2x2_4bit_fpga.npi"/>

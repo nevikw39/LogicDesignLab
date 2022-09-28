@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="Crossbar_2x2_4bit_fpga.tcl"/>
   <File Type="REPORTS-TCL" Name="Crossbar_2x2_4bit_fpga_reports.tcl"/>
   <File Type="RDS-RDS" Name="Crossbar_2x2_4bit_fpga.vds"/>
-  <File Type="RDS-UTIL" Name="Crossbar_2x2_4bit_fpga_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Crossbar_2x2_4bit_fpga_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Crossbar_2x2_4bit_fpga.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
