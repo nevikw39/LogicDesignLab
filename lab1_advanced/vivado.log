@@ -1,0 +1,86 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 27 15:11:39 2022
+# Process ID: 9204
+# Current directory: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5524 C:\Users\user\Desktop\LogicDesignLab\lab1_advanced\lab1_advanced.xpr
+# Log file: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/vivado.log
+# Journal file: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.xpr
+INFO: [Project 1-313] Project file moved from '/mnt/hgfs/LogicDesignLab/lab1_advanced' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.gen/sources_1', nor could it be found using path 'C:/mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/user/Downloads/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Dmux_1x4_4bit_t' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Dmux_1x4_4bit_t_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.srcs/sources_1/new/Lab1_Team30_Dmux_1x4_4bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmux
+INFO: [VRFC 10-311] analyzing module Dmux_1x4_4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.srcs/sources_1/new/Lab1_Team30_Dmux_1x4_4bit_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Dmux_1x4_4bit_t
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim'
+"xelab -wto 261661a4a7444a9a96403677ca79b76a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dmux_1x4_4bit_t_behav xil_defaultlib.Dmux_1x4_4bit_t xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/user/Downloads/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 261661a4a7444a9a96403677ca79b76a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Dmux_1x4_4bit_t_behav xil_defaultlib.Dmux_1x4_4bit_t xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dmux
+Compiling module xil_defaultlib.Dmux_1x4_4bit
+Compiling module xil_defaultlib.Dmux_1x4_4bit_t
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Dmux_1x4_4bit_t_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Dmux_1x4_4bit_t_behav -key {Behavioral:sim_1:Functional:Dmux_1x4_4bit_t} -tclbatch {Dmux_1x4_4bit_t.tcl} -view {C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/Dmux_1x4_4bit_t_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/Dmux_1x4_4bit_t_behav.wcfg
+source Dmux_1x4_4bit_t.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 9 ns : File "C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.srcs/sources_1/new/Lab1_Team30_Dmux_1x4_4bit_t.v" Line 41
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1018.426 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Dmux_1x4_4bit_t_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1018.426 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 27 15:19:06 2022...
