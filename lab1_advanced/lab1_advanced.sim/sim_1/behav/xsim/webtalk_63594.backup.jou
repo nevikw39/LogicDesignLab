@@ -2,8 +2,8 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Sep 27 01:43:41 2022
-# Process ID: 61726
+# Start of session at: Tue Sep 27 23:25:44 2022
+# Process ID: 63594
 # Current directory: /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim
 # Command line: wbtcv -mode batch -source /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim/xsim.dir/Dmux_1x4_4bit_t_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_1/behav/xsim/webtalk.log
