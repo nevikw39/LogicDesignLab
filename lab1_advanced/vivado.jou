@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 27 15:11:39 2022
+# Process ID: 9204
+# Current directory: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5524 C:\Users\user\Desktop\LogicDesignLab\lab1_advanced\lab1_advanced.xpr
+# Log file: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/vivado.log
+# Journal file: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/Dmux_1x4_4bit_t_behav.wcfg
+source Dmux_1x4_4bit_t.tcl
+close_sim
