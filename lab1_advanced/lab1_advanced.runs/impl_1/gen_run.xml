@@ -1,81 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1664354594">
-  <File Type="OPT-HWDEF" Name="Crossbar_2x2_4bit_fpga.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="Crossbar_2x2_4bit_fpga_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="Crossbar_2x2_4bit_fpga.dcp"/>
-  <File Type="BITSTR-BMM" Name="Crossbar_2x2_4bit_fpga_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Crossbar_2x2_4bit_fpga_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Crossbar_2x2_4bit_fpga_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="Crossbar_2x2_4bit_fpga_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1664358565">
   <File Type="PA-TCL" Name="Crossbar_2x2_4bit_fpga.tcl"/>
-  <File Type="OPT-TIMING" Name="Crossbar_2x2_4bit_fpga_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Crossbar_2x2_4bit_fpga_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="Crossbar_2x2_4bit_fpga_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Crossbar_2x2_4bit_fpga_reports.tcl"/>
-  <File Type="OPT-DRC" Name="Crossbar_2x2_4bit_fpga_drc_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="Crossbar_2x2_4bit_fpga_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Crossbar_2x2_4bit_fpga_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Crossbar_2x2_4bit_fpga_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="Crossbar_2x2_4bit_fpga_placed.dcp"/>
-  <File Type="PLACE-IO" Name="Crossbar_2x2_4bit_fpga_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Crossbar_2x2_4bit_fpga_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="Crossbar_2x2_4bit_fpga_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="Crossbar_2x2_4bit_fpga_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="Crossbar_2x2_4bit_fpga_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Crossbar_2x2_4bit_fpga_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="Crossbar_2x2_4bit_fpga_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="Crossbar_2x2_4bit_fpga_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Crossbar_2x2_4bit_fpga_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="Crossbar_2x2_4bit_fpga.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Crossbar_2x2_4bit_fpga_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Crossbar_2x2_4bit_fpga_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Crossbar_2x2_4bit_fpga_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Crossbar_2x2_4bit_fpga.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Crossbar_2x2_4bit_fpga_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Crossbar_2x2_4bit_fpga_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Crossbar_2x2_4bit_fpga_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Crossbar_2x2_4bit_fpga_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="Crossbar_2x2_4bit_fpga_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="Crossbar_2x2_4bit_fpga_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Crossbar_2x2_4bit_fpga_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Crossbar_2x2_4bit_fpga.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Crossbar_2x2_4bit_fpga_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Crossbar_2x2_4bit_fpga_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Crossbar_2x2_4bit_fpga_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="Crossbar_2x2_4bit_fpga_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="Crossbar_2x2_4bit_fpga_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="Crossbar_2x2_4bit_fpga_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="Crossbar_2x2_4bit_fpga_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="Crossbar_2x2_4bit_fpga_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="Crossbar_2x2_4bit_fpga_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Crossbar_2x2_4bit_fpga_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Crossbar_2x2_4bit_fpga_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="Crossbar_2x2_4bit_fpga_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="Crossbar_2x2_4bit_fpga_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Crossbar_2x2_4bit_fpga_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Crossbar_2x2_4bit_fpga_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Crossbar_2x2_4bit_fpga_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Crossbar_2x2_4bit_fpga_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Crossbar_2x2_4bit_fpga_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Crossbar_2x2_4bit_fpga_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Crossbar_2x2_4bit_fpga_bus_skew_postroute_physopted.pb"/>
+  <File Type="RDI-RDI" Name="Crossbar_2x2_4bit_fpga.vdi"/>
   <File Type="BG-BIT" Name="Crossbar_2x2_4bit_fpga.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Crossbar_2x2_4bit_fpga_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-DRC" Name="Crossbar_2x2_4bit_fpga.drc"/>
+  <File Type="BG-BGN" Name="Crossbar_2x2_4bit_fpga.bgn"/>
+  <File Type="BG-BIN" Name="Crossbar_2x2_4bit_fpga.bin"/>
   <File Type="BITSTR-RBT" Name="Crossbar_2x2_4bit_fpga.rbt"/>
   <File Type="BITSTR-NKY" Name="Crossbar_2x2_4bit_fpga.nky"/>
-  <File Type="PDI-FILE" Name="Crossbar_2x2_4bit_fpga.pdi"/>
+  <File Type="BITSTR-BMM" Name="Crossbar_2x2_4bit_fpga_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Crossbar_2x2_4bit_fpga.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Crossbar_2x2_4bit_fpga.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Crossbar_2x2_4bit_fpga.ltx"/>
   <File Type="RCFI_FILE" Name="Crossbar_2x2_4bit_fpga.rcfi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-HWDEF" Name="Crossbar_2x2_4bit_fpga.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Crossbar_2x2_4bit_fpga_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="Crossbar_2x2_4bit_fpga_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Crossbar_2x2_4bit_fpga_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Crossbar_2x2_4bit_fpga_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="Crossbar_2x2_4bit_fpga_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="Crossbar_2x2_4bit_fpga_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Crossbar_2x2_4bit_fpga_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Crossbar_2x2_4bit_fpga_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Crossbar_2x2_4bit_fpga_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Crossbar_2x2_4bit_fpga_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Crossbar_2x2_4bit_fpga_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Crossbar_2x2_4bit_fpga_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="Crossbar_2x2_4bit_fpga.pdi"/>
   <File Type="CFI_FILE" Name="Crossbar_2x2_4bit_fpga.cfi"/>
   <File Type="RNPI_FILE" Name="Crossbar_2x2_4bit_fpga.rnpi"/>
   <File Type="NPI_FILE" Name="Crossbar_2x2_4bit_fpga.npi"/>
   <File Type="RBD_FILE" Name="Crossbar_2x2_4bit_fpga.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Crossbar_2x2_4bit_fpga.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="Crossbar_2x2_4bit_fpga.sysdef"/>
-  <File Type="BG-BGN" Name="Crossbar_2x2_4bit_fpga.bgn"/>
-  <File Type="BG-DRC" Name="Crossbar_2x2_4bit_fpga.drc"/>
-  <File Type="RDI-RDI" Name="Crossbar_2x2_4bit_fpga.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/Lab1_Mux_4x1_4bit.v">
@@ -195,5 +154,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

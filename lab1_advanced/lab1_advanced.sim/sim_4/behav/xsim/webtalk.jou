@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Webtalk v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Sep 28 14:22:26 2022
-# Process ID: 124891
-# Current directory: /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim
-# Command line: wbtcv -mode batch -source /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim/xsim.dir/Crossbar_4x4_4bit_t_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim/webtalk.log
-# Journal file: /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim/webtalk.jou
+# Start of session at: Thu Sep 29 00:31:18 2022
+# Process ID: 8608
+# Current directory: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim/xsim.dir/Toggle_Flip_Flop_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim/webtalk.log
+# Journal file: C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source /mnt/hgfs/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim/xsim.dir/Crossbar_4x4_4bit_t_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/user/Desktop/LogicDesignLab/lab1_advanced/lab1_advanced.sim/sim_4/behav/xsim/xsim.dir/Toggle_Flip_Flop_t_behav/webtalk/xsim_webtalk.tcl -notrace
