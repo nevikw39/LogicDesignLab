@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 30 00:45:41 2022
+# Process ID: 15520
+# Current directory: C:/Users/user/Desktop/LogicDesignLab/lab2_basic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4164 C:\Users\user\Desktop\LogicDesignLab\lab2_basic\lab2_basic.xpr
+# Log file: C:/Users/user/Desktop/LogicDesignLab/lab2_basic/vivado.log
+# Journal file: C:/Users/user/Desktop/LogicDesignLab/lab2_basic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/user/Desktop/LogicDesignLab/lab2_basic/lab2_basic.xpr
+update_compile_order -fileset sources_1
