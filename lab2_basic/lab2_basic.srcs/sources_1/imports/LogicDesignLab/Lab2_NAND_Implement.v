@@ -81,7 +81,7 @@ nand_not g1(w, o);
 
 endmodule
 
-module nand_xnor(
+module nand_xor(
     input a,
     input b,
     output o
@@ -96,7 +96,7 @@ nand_or g4(w0, w1, o);
 
 endmodule
 
-module nand_xor(
+module nand_xnor(
     input a,
     input b,
     output o
