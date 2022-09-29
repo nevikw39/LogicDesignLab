@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab2_basic.srcs/sources_1/imports/LogicDesignLab/Lab2_NAND_Implement.v" \
+"../../../../lab2_basic.srcs/sources_1/imports/LogicDesignLab/NAND_Implement_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
