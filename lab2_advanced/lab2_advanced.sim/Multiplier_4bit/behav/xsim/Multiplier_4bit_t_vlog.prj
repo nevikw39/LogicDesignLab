@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab2_advanced.srcs/sources_1/imports/LogicDesignLab/Lab2_Team30_Decode_And_Execute.v" \
+"../../../../lab2_advanced.srcs/sources_1/imports/LogicDesignLab/Lab2_Team30_Multiplier_4bit.v" \
+"../../../../lab2_advanced.srcs/sources_1/imports/LogicDesignLab/Lab2_Team30_Ripple_Carry_Adder.v" \
+"../../../../lab2_advanced.srcs/sources_1/imports/LogicDesignLab/Universal_Gate.v" \
+"../../../../lab2_advanced.srcs/sources_1/new/Lab2_Team30_Multiplier_4bit_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
