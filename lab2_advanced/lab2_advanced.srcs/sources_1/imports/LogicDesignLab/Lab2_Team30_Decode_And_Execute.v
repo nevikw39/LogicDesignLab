@@ -30,7 +30,7 @@ module ug_and(
 wire w0, w1;
 ug_nor g0(a, a, w0), g1(b, b, w1), g2(w0, w1, c);
 
-endmodule;
+endmodule
 
 module ug_or(
     input a,
