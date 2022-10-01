@@ -42,11 +42,15 @@ Ripple_Carry_Adder RCA(
 // end
 
 initial begin
-    repeat (2 ** 9-1) begin
-        #1
-        a = a + 8'b1;
-        b = b + 8'b1;
+    repeat (3) begin
+       repeat((2**9)-1) begin
+            #1
+            a = a + 8'b1;
+            b = b + 8'b1;
+        end
         cin = cin + 1'b1;
+        a = 8'b0;
+        b = 8'b0;
     end
     #1 $finish;
 end
