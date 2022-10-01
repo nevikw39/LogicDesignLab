@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2022/09/30 01:02:29
+// Create Date: 2022/10/01 13:31:09
 // Design Name: 
-// Module Name: RippleCarryAdder_t
+// Module Name: Ripple_Carry_Adder_t
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,8 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module RippleCarryAdder_t;
-
+module Ripple_Carry_Adder_t;
 reg [8-1:0] a = 8'b0;
 reg [8-1:0] b = 8'b0;
 reg cin = 1'b0;
