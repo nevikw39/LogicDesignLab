@@ -2,11 +2,11 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Oct  1 13:36:09 2022
-# Process ID: 19408
-# Current directory: C:/Users/user/Desktop/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/user/Desktop/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim/xsim.dir/Ripple_Carry_Adder_t_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/user/Desktop/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim/webtalk.log
-# Journal file: C:/Users/user/Desktop/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim\webtalk.jou
+# Start of session at: Mon Oct  3 18:43:32 2022
+# Process ID: 19140
+# Current directory: D:/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim/xsim.dir/Decode_And_Execute_t_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim/webtalk.log
+# Journal file: D:/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/user/Desktop/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim/xsim.dir/Ripple_Carry_Adder_t_behav/webtalk/xsim_webtalk.tcl -notrace
+source D:/LogicDesignLab/lab2_advanced/lab2_advanced.sim/Decode_And_Execute/behav/xsim/xsim.dir/Decode_And_Execute_t_behav/webtalk/xsim_webtalk.tcl -notrace
