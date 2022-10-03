@@ -13,27 +13,28 @@
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
       <ZoomEndTime time="65001fs"></ZoomEndTime>
-      <Cursor1Time time="17236fs"></Cursor1Time>
+      <Cursor1Time time="25328fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="74"></NameColumnWidth>
-      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+      <ValueColumnWidth column_width="62"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="4" />
-   <wvobject type="array" fp_name="/Decode_And_Execute_t/rs">
+   <wvobject fp_name="/Decode_And_Execute_t/rs" type="array">
       <obj_property name="ElementShortName">rs[3:0]</obj_property>
       <obj_property name="ObjectShortName">rs[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/Decode_And_Execute_t/rt">
+   <wvobject fp_name="/Decode_And_Execute_t/rt" type="array">
       <obj_property name="ElementShortName">rt[3:0]</obj_property>
       <obj_property name="ObjectShortName">rt[3:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/Decode_And_Execute_t/sel">
+   <wvobject fp_name="/Decode_And_Execute_t/sel" type="array">
       <obj_property name="ElementShortName">sel[2:0]</obj_property>
       <obj_property name="ObjectShortName">sel[2:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/Decode_And_Execute_t/rd">
+   <wvobject fp_name="/Decode_And_Execute_t/rd" type="array">
       <obj_property name="ElementShortName">rd[3:0]</obj_property>
       <obj_property name="ObjectShortName">rd[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

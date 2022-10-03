@@ -9,26 +9,15 @@ Universal_Gate ug(1'b1, i, o);
 
 endmodule
 
-module ug_nor(
-    input a,
-    input b,
-    output c
-    );
-
-wire not_a;
-ug_not g0(a, not_a);
-Universal_Gate g1(not_a, b, c);
-
-endmodule
-
 module ug_and(
     input a,
     input b,
     output c
     );
 
-wire w0, w1;
-ug_nor g0(a, a, w0), g1(b, b, w1), g2(w0, w1, c);
+wire w;
+ug_not g0(b, w);
+Universal_Gate g1(a, w, c);
 
 endmodule
 
@@ -38,9 +27,10 @@ module ug_or(
     output c
     );
 
-wire w;
-ug_nor g0(a, b, w),
-       g1(w, w, c);
+wire w0, w1;
+ug_not g0(a, w0),
+       g1(w1, c);
+Universal_Gate g2(w0, b, w1);
 
 endmodule
 
