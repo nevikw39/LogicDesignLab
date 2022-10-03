@@ -20,6 +20,8 @@ reg error = 1'b0;
 wire [4-1:0] sum;
 wire cout;
 
+reg [4:0] w = 5'b0 ;
+
 // instantiate the test instance.
 Ripple_Carry_Adder rca(
     .a (a), 
@@ -58,6 +60,16 @@ initial begin
     // #4
     // setting the done signal
     // done = 1'b1;
+    repeat(2**9) begin 
+        #4
+        {a, b, cin} = {a, b, cin} + 9'b1;
+        w = a + b + cin;
+        #1
+        if(w != {cout, sum}) error = 1'b1;
+        else error = 1'b0;
+    end
+    #4
+    done = 1'b1;
 end
 
 endmodule

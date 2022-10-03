@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2022/10/01 13:31:09
+// Create Date: 2022/10/04 01:04:47
 // Design Name: 
-// Module Name: Ripple_Carry_Adder_t
+// Module Name: Exhausted_Testing_t
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,39 +20,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Ripple_Carry_Adder_t;
-reg [8-1:0] a = 8'b0;
-reg [8-1:0] b = 8'b0;
-reg cin = 1'b0;
-wire cout;
-wire [8-1:0] sum;
+module Exhausted_Testing_t;
 
-Ripple_Carry_Adder_8 RCA(
+    wire [3:0] a, b;
+    wire cin, error, done;
+    
+    Exhausted_Testing ET(
     .a(a), 
     .b(b), 
     .cin(cin), 
-    .cout(cout), 
-    .sum(sum)
-);
-
+    .error(error), 
+    .done(done)
+    );
 // uncommment and add "+access+r" to your nverilog command to dump fsdb waveform on NTHUCAD
 // initial begin
 //      $fsdbDumpfile("Adders.fsdb");
 //      $fsdbDumpvars;
 // end
 
-initial begin
-    repeat (3) begin
-       repeat((2**9)-1) begin
-            #1
-            a = a + 8'b1;
-            b = b + 8'b1;
-        end
-        cin = cin + 1'b1;
-        a = 8'b0;
-        b = 8'b0;
-    end
-    #1 $finish;
-end
 
 endmodule
