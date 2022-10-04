@@ -15,6 +15,7 @@
   <File Type="BITSTR-SYSDEF" Name="Decode_And_Execute_fpga.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="Decode_And_Execute_fpga.ltx"/>
+  <File Type="RCFI_FILE" Name="Decode_And_Execute_fpga.rcfi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-HWDEF" Name="Decode_And_Execute_fpga.hwdef"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Decode_And_Execute_fpga_incremental_reuse_pre_placed.rpt"/>
@@ -30,7 +31,6 @@
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Decode_And_Execute_fpga_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Decode_And_Execute_fpga_postroute_physopt_bb.dcp"/>
   <File Type="PDI-FILE" Name="Decode_And_Execute_fpga.pdi"/>
-  <File Type="RCFI_FILE" Name="Decode_And_Execute_fpga.rcfi"/>
   <File Type="CFI_FILE" Name="Decode_And_Execute_fpga.cfi"/>
   <File Type="RNPI_FILE" Name="Decode_And_Execute_fpga.rnpi"/>
   <File Type="NPI_FILE" Name="Decode_And_Execute_fpga.npi"/>
