@@ -48,66 +48,69 @@ nand_or_1 g4(w0, w1, o);
 
 endmodule
 
-module CLA_4bit(a, b, cin, co, s);
-input [3:0] a, b;
+module getpgs(a, b, cin, p, g, s);
+input a, b, cin;
+output p, g, s;
+wire w;
+
+nand_xor_1 r0(a, b, w);
+nand_xor_1 r1(w, cin, s);
+
+nand_and_1 r2(a, b, g);
+nand_or_1 r3(a, b, p);
+
+endmodule
+
+module CLA_4bit(p, g, cin, cout, pg, gg);
+input [3:0] p, g;
 input cin;
-output co;
-output [3:0] s;
+output [2:0] cout;
+output pg, gg;
 
-wire [3:0] p, g, c;
-wire[9:0] w;
-wire[15:0] t;
+wire[8:0] w;
+wire[6:0] t;
 
-nand_xor_1 d0(a[0], b[0], p[0]);
-nand_xor_1 d1(a[1], b[1], p[1]);
-nand_xor_1 d2(a[2], b[2], p[2]);
-nand_xor_1 d3(a[3], b[3], p[3]);
+nand_and_1 y4(p[0], cin, w[0]);
+nand_or_1 y5(g[0], w[0], cout[0]);
 
-nand_and_1 d4(a[0], b[0], g[0]);
-nand_and_1 d5(a[1], b[1], g[1]);
-nand_and_1 d6(a[2], b[2], g[2]);
-nand_and_1 d7(a[3], b[3], g[3]);
+nand_and_1 y6(p[1], w[0], w[1]);
+nand_and_1 y7(p[1], g[0], w[2]);
+nand_or_1 y8(w[1], w[2], t[0]);
+nand_or_1 y9(g[1], t[0], cout[1]);
 
-nand_xor_1 d8(p[0], c[0], s[0]);
-nand_xor_1 d9(p[1], c[1], s[1]);
-nand_xor_1 d10(p[2], c[2], s[2]);
-nand_xor_1 d11(p[3], c[3], s[3]);
+nand_and_1 y10(p[2], w[1], w[3]);
+nand_and_1 y11(p[2], w[2], w[4]);
+nand_and_1 y12(p[2], g[1], w[5]);
+nand_or_1 y13(w[3], w[4], t[1]);
+nand_or_1 y14(w[5], t[1], t[2]);
+nand_or_1 y15(t[2], g[2], cout[2]);
 
-nand_and_1 y0(cin, cin, c[0]);
+nand_and_1 y16(p[3], w[4], w[6]);
+nand_and_1 y17(p[3], w[5], w[7]);
+nand_and_1 y18(g[2],p[3], w[8]);
+nand_or_1 y19(w[6], w[7], t[3]);
+nand_or_1 y20(w[8], t[3], t[4]);
+nand_or_1 y21(g[3], t[4], gg);
 
-nand_and_1 y4(p[0], c[0], w[0]);
-nand_or_1 y5(g[0], w[0], c[1]);
+nand_and_1 y22(p[3], p[2], t[5]);
+nand_and_1 y23(p[1], t[5], t[6]);
+nand_and_1 y24(p[0], t[6], pg);
 
-nand_and_1 y6(p[1], g[0], w[1]);
-nand_and_1 y7(p[1], p[0], t[0]);
-nand_and_1 y8(t[0], c[0], w[2]);
-nand_or_1 y9(g[1], w[1], t[1]);
-nand_or_1 y10(t[1], w[2], c[2]);
+endmodule
 
-nand_and_1 y11(p[2], g[1], w[3]);
-nand_and_1 y12(p[2], p[1], t[2]);
-nand_and_1 y13(t[2], g[0], w[4]);
-nand_and_1 y19(p[2], p[1], t[6]);
-nand_and_1 y14(t[6], p[0], t[3]);
-nand_and_1 y15(t[3], c[0], w[5]);
-nand_or_1 y16(g[2], w[3], t[4]);
-nand_or_1 y17(t[4], w[4], t[5]);
-nand_or_1 y18(t[5], w[5], c[3]);
+module CLA_2bit (pg, gg, c0, c4, c8);
+input [1:0] pg, gg;
+input c0;
+output c4, c8;
 
-nand_and_1 y20(p[3], g[2], w[6]);
-nand_and_1 y21(p[2], g[1], t[7]);
-nand_and_1 y22(t[7], p[3], w[7]);
-nand_and_1 y23(p[2], p[1], t[8]);
-nand_and_1 y24(t[8], p[3], t[9]);
-nand_and_1 y25(t[9], g[0], w[8]);
-nand_and_1 y26(p[2], p[1], t[10]);
-nand_and_1 y27(t[10], p[0], t[11]);
-nand_and_1 y28(t[11], p[3], t[12]);
-nand_and_1 y29(t[12], c[0], w[9]);
-nand_or_1 y30(g[3], w[6], t[13]);
-nand_or_1 y31(t[13], w[7], t[14]);
-nand_or_1 y32(t[14], w[8], t[15]);
-nand_or_1 y33(t[15], w[9], co);
+wire [2:0] w;
+
+nand_and_1 a1(pg[0], c0, w[0]);
+nand_or_1 a2(w[0], gg[0], c4);
+
+nand_or_1 a3(w[0], gg[0], w[1]);
+nand_and_1 a4(pg[1], w[1], w[2]);
+nand_or_1 a5(w[2], gg[1], c8);
 
 endmodule
 
@@ -117,8 +120,20 @@ input c0;
 output [8-1:0] s;
 output c8;
 
-wire c4;
+wire [7:0] p, g;
+wire [7:1] cout;
+wire [1:0] pg, gg;
 
-CLA_4bit z1(a[3:0], b[3:0], c0, c4, s[3:0]);
-CLA_4bit z2(a[7:4], b[7:4], c4, c8, s[7:4]);
+getpgs g0(a[0], b[0], c0, p[0], g[0], s[0]);
+getpgs g1(a[1], b[1], cout[1], p[1], g[1], s[1]);
+getpgs g2(a[2], b[2], cout[2], p[2], g[2], s[2]);
+getpgs g3(a[3], b[3], cout[3], p[3], g[3], s[3]);
+getpgs g4(a[4], b[4], cout[4], p[4], g[4], s[4]);
+getpgs g5(a[5], b[5], cout[5], p[5], g[5], s[5]);
+getpgs g6(a[6], b[6], cout[6], p[6], g[6], s[6]);
+getpgs g7(a[7], b[7], cout[7], p[7], g[7], s[7]);
+
+CLA_4bit c1(p[3:0], g[3:0], c0, cout[3:1], pg[0], gg[0]);
+CLA_4bit c2(p[7:4], g[7:4], cout[4], cout[7:5], pg[1], gg[1]);
+CLA_2bit c3(pg, gg, c0, cout[4], c8);
 endmodule
