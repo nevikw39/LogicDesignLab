@@ -172,16 +172,15 @@ ug_and g2(x[3], x[2], x32),
        g4(x321, x[0], eq[0]);
 
 ug_not g5 [2:0] (3'b010, le[3:1]);
-wire [3:0] not_a, not_a_and_b;
-ug_not g6 [3:0] (a, not_a);
-ug_and g7 [3:0] (not_a, b, not_a_and_b);
+wire [3:0] not_a_and_b;
+Universal_Gate g6 [3:0] (b, a, not_a_and_b);
 wire [4:0] w;
-ug_and g8(x[3], not_a_and_b[2], w[0]),
-       g9(x32, not_a_and_b[1], w[1]),
-       g10(x321, not_a_and_b[0], w[2]);
-ug_or g11(not_a_and_b[3], w[0], w[3]),
-      g12(w[3], w[1], w[4]),
-      g13(w[4], w[2], le[0]);
+ug_and g7(x[3], not_a_and_b[2], w[0]),
+       g8(x32, not_a_and_b[1], w[1]),
+       g9(x321, not_a_and_b[0], w[2]);
+ug_or g10(not_a_and_b[3], w[0], w[3]),
+      g11(w[3], w[1], w[4]),
+      g12(w[4], w[2], le[0]);
 
 endmodule
 
