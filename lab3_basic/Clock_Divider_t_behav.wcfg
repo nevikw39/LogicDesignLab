@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Clock_Divider_t_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Clock_Divider_t" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="226001fs"></ZoomEndTime>
+      <Cursor1Time time="10065fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wvobject type="logic" fp_name="/Clock_Divider_t/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Clock_Divider_t/rst_n">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Clock_Divider_t/sel">
+      <obj_property name="ElementShortName">sel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sel[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Clock_Divider_t/clk1_2">
+      <obj_property name="ElementShortName">clk1_2</obj_property>
+      <obj_property name="ObjectShortName">clk1_2</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Clock_Divider_t/clk1_4">
+      <obj_property name="ElementShortName">clk1_4</obj_property>
+      <obj_property name="ObjectShortName">clk1_4</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Clock_Divider_t/clk1_8">
+      <obj_property name="ElementShortName">clk1_8</obj_property>
+      <obj_property name="ObjectShortName">clk1_8</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Clock_Divider_t/clk1_3">
+      <obj_property name="ElementShortName">clk1_3</obj_property>
+      <obj_property name="ObjectShortName">clk1_3</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Clock_Divider_t/dclk">
+      <obj_property name="ElementShortName">dclk</obj_property>
+      <obj_property name="ObjectShortName">dclk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Clock_Divider_t/cyc">
+      <obj_property name="ElementShortName">cyc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyc[31:0]</obj_property>
+   </wvobject>
+</wave_config>
