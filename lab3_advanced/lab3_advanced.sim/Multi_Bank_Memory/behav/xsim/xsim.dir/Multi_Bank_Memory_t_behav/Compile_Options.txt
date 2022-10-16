@@ -1,0 +1,1 @@
+-wto "28820ca433294497a77128c26828e355" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Multi_Bank_Memory_t_behav" "xil_defaultlib.Multi_Bank_Memory_t" "xil_defaultlib.glbl" -log "elaborate.log" 

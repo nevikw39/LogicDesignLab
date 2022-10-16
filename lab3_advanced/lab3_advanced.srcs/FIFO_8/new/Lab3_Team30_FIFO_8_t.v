@@ -36,7 +36,7 @@ always #(cyc / 2) clk = !clk;
 
 // uncommment and add "+access+r" to your nverilog command to dump fsdb waveform on NTHUCAD
 // initial begin
-//     $dumpfile("Clock_Divider.vhd");
+//     $dumpfile("FIFO_8.vhd");
 //     $dumpvars("+all");
 // end
 
