@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Multi_Bank_Memory_t_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Multi_Bank_Memory_t" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="110001fs"></ZoomEndTime>
+      <Cursor1Time time="95000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="120"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject type="group" fp_name="group132">
+      <obj_property name="label">MBM read</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/Multi_Bank_Memory_t/mbm/raddr">
+         <obj_property name="ElementShortName">raddr[10:0]</obj_property>
+         <obj_property name="ObjectShortName">raddr[10:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/ra">
+         <obj_property name="ElementShortName">ra</obj_property>
+         <obj_property name="ObjectShortName">ra</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/rb">
+         <obj_property name="ElementShortName">rb</obj_property>
+         <obj_property name="ObjectShortName">rb</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/rc">
+         <obj_property name="ElementShortName">rc</obj_property>
+         <obj_property name="ObjectShortName">rc</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/rd">
+         <obj_property name="ElementShortName">rd</obj_property>
+         <obj_property name="ObjectShortName">rd</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group133">
+      <obj_property name="label">MBM write</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/Multi_Bank_Memory_t/mbm/waddr">
+         <obj_property name="ElementShortName">waddr[10:0]</obj_property>
+         <obj_property name="ObjectShortName">waddr[10:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/wa">
+         <obj_property name="ElementShortName">wa</obj_property>
+         <obj_property name="ObjectShortName">wa</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/wb">
+         <obj_property name="ElementShortName">wb</obj_property>
+         <obj_property name="ObjectShortName">wb</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/wc">
+         <obj_property name="ElementShortName">wc</obj_property>
+         <obj_property name="ObjectShortName">wc</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/mbm/wd">
+         <obj_property name="ElementShortName">wd</obj_property>
+         <obj_property name="ObjectShortName">wd</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group134">
+      <obj_property name="label">MBM out</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/Multi_Bank_Memory_t/mbm/outa">
+         <obj_property name="ElementShortName">outa[7:0]</obj_property>
+         <obj_property name="ObjectShortName">outa[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Multi_Bank_Memory_t/mbm/outb">
+         <obj_property name="ElementShortName">outb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">outb[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Multi_Bank_Memory_t/mbm/outc">
+         <obj_property name="ElementShortName">outc[7:0]</obj_property>
+         <obj_property name="ObjectShortName">outc[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/Multi_Bank_Memory_t/mbm/outd">
+         <obj_property name="ElementShortName">outd[7:0]</obj_property>
+         <obj_property name="ObjectShortName">outd[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider25" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/ren">
+      <obj_property name="ElementShortName">ren</obj_property>
+      <obj_property name="ObjectShortName">ren</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/rbank">
+      <obj_property name="ElementShortName">rbank[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rbank[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/rmem">
+      <obj_property name="ElementShortName">rmem[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rmem[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/raddr">
+      <obj_property name="ElementShortName">raddr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">raddr[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/dout">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/din">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Multi_Bank_Memory_t/wen">
+      <obj_property name="ElementShortName">wen</obj_property>
+      <obj_property name="ObjectShortName">wen</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/wbank">
+      <obj_property name="ElementShortName">wbank[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wbank[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/wmem">
+      <obj_property name="ElementShortName">wmem[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wmem[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Multi_Bank_Memory_t/waddr">
+      <obj_property name="ElementShortName">waddr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">waddr[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

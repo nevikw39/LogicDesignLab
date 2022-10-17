@@ -16,9 +16,8 @@ module Memory #(
 reg [N-1:0] mem [M-1:0];
 
 always @(posedge clk) begin
-    if (ren) begin
+    if (ren)
         dout <= mem[addr];
-    end
     else if (wen) begin
         dout <= 0;
         mem[addr] <= din;
@@ -40,8 +39,8 @@ module Bank #( parameter N = 8 )(
 );
 
 reg ra = 0, rb = 0, rc = 0, rd = 0, wa = 0, wb = 0, wc = 0, wd = 0;
-reg [8:0] addra = 0, addrb = 0, addrc = 0, addrd = 0;
-wire [7:0] outa, outb, outc, outd;
+reg [6:0] addra = 0, addrb = 0, addrc = 0, addrd = 0;
+wire [N-1:0] outa, outb, outc, outd;
 Memory a(clk, ra, wa, addra, din, outa),
        b(clk, rb, wb, addrb, din, outb),
        c(clk, rc, wc, addrc, din, outc),
@@ -52,50 +51,61 @@ wire [6:0] rmemaddr, wmemaddr;
 assign {rmem, rmemaddr} = raddr;
 assign {wmem, wmemaddr} = waddr;
 
-always @(posedge clk) begin
+always @(*) begin
     if (ren) begin
-        ra <= rmem == 0;
-        rb <= rmem == 1;
-        rc <= rmem == 2;
-        rd <= rmem == 3;
+        ra = rmem == 0;
+        rb = rmem == 1;
+        rc = rmem == 2;
+        rd = rmem == 3;
         case (rmem)
-            0: addra <= rmemaddr;
-            1: addrb <= rmemaddr;
-            2: addrc <= rmemaddr;
-            3: addrd <= rmemaddr;
+            0: addra = rmemaddr;
+            1: addrb = rmemaddr;
+            2: addrc = rmemaddr;
+            3: addrd = rmemaddr;
         endcase
     end
-    if (wen) begin
-        if (wmem == rmem)
-            dout <= 0;
-        else begin
-            wa <= wmem == 0;
-            wb <= wmem == 1;
-            wc <= wmem == 2;
-            wd <= wmem == 3;
-            case (wmem)
-                0: begin
-                    addra <= wmemaddr;
-                    dout <= outa;
-                end
-                01: begin
-                    addrb <= wmemaddr;
-                    dout <= outb;
-                end
-                2: begin
-                    addrc <= wmemaddr;
-                    dout <= outc;
-                end
-                3: begin
-                    addrd <= wmemaddr;
-                    dout <= outd;
-                end
-            endcase
-        end
+    else begin
+        ra = 0;
+        rb = 0;
+        rc = 0;
+        rd = 0;
     end
-    else
-        dout <= 0;
+    if (wen && !(wmem == rmem && ren)) begin
+        wa = wmem == 0;
+        wb = wmem == 1;
+        wc = wmem == 2;
+        wd = wmem == 3;
+        case (wmem)
+            0: addra = wmemaddr;
+            1: addrb = wmemaddr;
+            2: addrc = wmemaddr;
+            3: addrd = wmemaddr;
+        endcase
+    end
+    else begin
+        wa = 0;
+        wb = 0;
+        wc = 0;
+        wd = 0;
+    end
 end
+
+reg dren = 0;
+reg [1:0] drmem = 0;
+always @(posedge clk) begin
+    dren <= ren;
+    drmem <= rmem;
+end
+always @(*)
+    if (dren)
+        case (drmem)
+            0: dout = outa;
+            1: dout = outb;
+            2: dout = outc;
+            3: dout = outd;
+        endcase
+    else
+        dout = 0;
 
 endmodule
 
@@ -116,25 +126,48 @@ Bank a(clk, ra, wa, raddr[8:0], waddr[8:0], din, outa),
 
 assign rbank = raddr[10:9], wbank = waddr[10:9];
 
-always @(posedge clk) begin
+always @(*) begin
     if (ren) begin
-        ra <= rbank == 0;
-        rb <= rbank == 1;
-        rc <= rbank == 2;
-        rd <= rbank == 3;
+        ra = rbank == 0;
+        rb = rbank == 1;
+        rc = rbank == 2;
+        rd = rbank == 3;
     end
-    if (wen) begin
-        if (wbank == rbank)
-            dout <= 0;
-        else begin
-            wa <= wbank == 0;
-            wb <= wbank == 1;
-            wc <= wbank == 2;
-            wd <= wbank == 3;
-        end
+    else begin
+        ra = 0;
+        rb = 0;
+        rc = 0;
+        rd = 0;
     end
-    else
-        dout <= 0;
+    if (wen && !(waddr[10:7] == raddr[10:7] && ren)) begin
+        wa = wbank == 0;
+        wb = wbank == 1;
+        wc = wbank == 2;
+        wd = wbank == 3;
+    end
+    else begin
+        wa = 0;
+        wb = 0;
+        wc = 0;
+        wd = 0;
+    end
 end
+
+reg dren = 0;
+reg [1:0] drbank = 0;
+always @(posedge clk) begin
+    dren <= ren;
+    drbank <= rbank;
+end
+always @(*)
+    if (dren)
+        case (drbank)
+            0: dout = outa;
+            1: dout = outb;
+            2: dout = outc;
+            3: dout = outd;
+        endcase
+    else
+        dout = 0;
 
 endmodule
