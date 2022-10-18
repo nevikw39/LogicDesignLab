@@ -21,9 +21,9 @@
 
 
 module Parameterized_Ping_Pong_Counter_t();
-reg clk = 1'b0; //
-reg rst_n = 1'b0;  //
-reg enable = 1'b1; //
+reg clk = 1'b0; 
+reg rst_n = 1'b0; 
+reg enable = 1'b1; 
 reg flip = 1'b0;
 reg [3:0]max = 4'b1111;
 reg [3:0]min = 4'b0000;
@@ -56,33 +56,32 @@ initial begin
     min = 4'b0000;
     #(cyc/2)
     #(cyc*10)
-    enable = 1'b0; //enable=0
+    enable = 1'b0; 
     #(cyc*5)
     enable = 1'b1;
     #(cyc*10)
     #(cyc/2)
-    @(negedge clk) flip = 1'b1; //flip=1
+    @(negedge clk) flip = 1'b1; 
     @(negedge clk) flip = 1'b0;
     #(cyc/2)
     #(cyc*8)
-
-    max = 4'b0100; //max < min
+    max = 4'b0001;
     min = 4'b1000;
-    #(cyc*5) //out=4
     
-    max = 4'b0010; //out>max
-    min = 4'b0001;
-    #(cyc*5)
+    #(cyc*5)   
+    max = 4'b0010;
+    min = 4'b0000;
     
-    max = 4'b1000; //out<min
-    min = 4'b0110;
     #(cyc*5)
-   
+    max = 4'b1000; 
+    min = 4'b0101;
+    
+    #(cyc*5)
     max = 4'b1111;
     min = 4'b0000;
+    
     #(cyc*5)
     
-
 	#1 $finish;
 end
 
