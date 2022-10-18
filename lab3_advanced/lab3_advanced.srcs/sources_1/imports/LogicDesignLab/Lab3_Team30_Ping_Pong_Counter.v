@@ -9,18 +9,28 @@ output reg [4-1:0] out;
 parameter max = 4'b1111;
 parameter min = 4'b0000;
 
+reg next_dir;
+wire [3:0] next_out;
+
+assign next_out = (next_dir)? (out + 1'b1) : (out - 1'b1);
+
 always @ (posedge clk) begin
     if(rst_n) begin
-       if( (out == max & direction) | (out == min & !direction) ) assign direction = ~direction;
-       
        if(enable) begin
-            assign out = (direction)? (out+1'b1) : (out-1'b1);
+            direction <= next_dir;
+            out <= next_out;
        end 
     end
     else begin
-        assign out = 4'b0000;
-        assign direction = 1'b1;
+        out <= 4'b0000;
+        direction <= 1'b1;
     end
+end
+
+always @(*) begin
+if(out == max & direction) next_dir = 0;
+else if(out == min & !direction) next_dir = 1;
+else next_dir = direction;
 end
 
 endmodule

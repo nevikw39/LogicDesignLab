@@ -43,3 +43,8 @@ launch_simulation -simset [get_filesets PPC ]
 source Ping_Pong_Counter_t.tcl
 close_sim
 close_project
+open_project C:/Users/user/Desktop/LogicDesignLab/lab3_advanced/lab3_advanced.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/user/Desktop/LogicDesignLab/lab3_advanced/lab3_advanced.srcs/sources_1/new/Lab3_Team30_Parameterized_Ping_Pong_Counter_t.v w ]
+add_files C:/Users/user/Desktop/LogicDesignLab/lab3_advanced/lab3_advanced.srcs/sources_1/new/Lab3_Team30_Parameterized_Ping_Pong_Counter_t.v
+update_compile_order -fileset sources_1

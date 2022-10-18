@@ -6,7 +6,21 @@ input enable;
 input flip;
 input [4-1:0] max;
 input [4-1:0] min;
-output direction;
-output [4-1:0] out;
+output reg direction;
+output reg [4-1:0] out;
 
+always @ (posedge clk) begin
+    if(rst_n) begin     
+       if(enable & max > min & out <= max & out >= min) begin
+            if( ((out == max & direction) | (out == min & !direction))) assign direction = ~direction;
+            else if( (out < max | out > min) & flip) assign direction = ~direction;  
+            
+            assign out = (direction)? (out+1'b1) : (out-1'b1);
+       end 
+    end
+    else begin
+        assign out = min;
+        assign direction = 1'b1;
+    end
+end
 endmodule
