@@ -35,7 +35,6 @@ always @(*) begin
         else if(out == min & !direction) next_dir = 1;
         else next_dir = direction;
     end
-//else if(!flip & max > min & out <= max & out >= min) next_dir = direction;
 end
 
 endmodule
