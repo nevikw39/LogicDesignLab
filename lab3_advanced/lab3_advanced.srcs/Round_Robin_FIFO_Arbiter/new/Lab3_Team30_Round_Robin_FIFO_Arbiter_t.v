@@ -52,7 +52,7 @@ initial begin
     while (~eof) begin
         @(negedge clk)
         rst_n = 1;
-        eof = $fscanf(f, "%b%d%d%d%d%d", wen, a, b, c, d);
+        eof = $fscanf(f, "%b%d%d%d%d", wen, a, b, c, d);
     end
     
     @(negedge clk)
