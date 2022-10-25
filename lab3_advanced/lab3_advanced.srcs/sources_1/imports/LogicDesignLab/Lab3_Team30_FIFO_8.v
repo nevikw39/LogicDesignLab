@@ -8,11 +8,14 @@ input [8-1:0] din;
 output reg [8-1:0] dout;
 output reg error;
 
-reg[7:0] queue[2:0];
-reg[2:0] front = 0, back = 0;
+reg[7:0] queue[8:0];
+reg[3:0] front, back;
 
-assign full = (back + 1 & 7) == front;
-assign empty = !full && front == back;
+wire[3:0] next_front, next_back;
+assign next_front = front != 8 ? front + 1 : 0,
+       next_back = back != 8 ? back + 1 : 0;
+assign full = next_back == front,
+       empty = front == back;
 
 always @(posedge clk) begin
     if (rst_n) begin
@@ -23,8 +26,8 @@ always @(posedge clk) begin
             end
             else begin
                 error <= 0;
-                dout <= queue[front + 1 & 7];
-                front <= front + 1 & 7;
+                dout <= queue[next_front];
+                front <= next_front;
             end
         end
         else if (wen) begin
@@ -35,12 +38,14 @@ always @(posedge clk) begin
             else begin
                 error <= 0;
                 dout <= 8'bxxxxxxxx;
-                queue[back + 1 & 7] <= din;
-                back <= back + 1 & 7;
+                queue[next_back] <= din;
+                back <= next_back;
             end
         end
-        else
+        else begin
+            error <= 0;
             dout <= 8'bxxxxxxxx;
+        end
      end
      else begin
         front <= 0;

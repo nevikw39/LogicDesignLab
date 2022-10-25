@@ -12,11 +12,11 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="110001fs"></ZoomEndTime>
-      <Cursor1Time time="25000fs"></Cursor1Time>
+      <ZoomEndTime time="34101fs"></ZoomEndTime>
+      <Cursor1Time time="25fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="100"></NameColumnWidth>
+      <NameColumnWidth column_width="96"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="15" />
@@ -61,7 +61,6 @@
    <wvobject type="array" fp_name="/Round_Robin_FIFO_Arbiter_t/dout">
       <obj_property name="ElementShortName">dout[7:0]</obj_property>
       <obj_property name="ObjectShortName">dout[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/Round_Robin_FIFO_Arbiter_t/valid">
       <obj_property name="ElementShortName">valid</obj_property>
@@ -95,7 +94,6 @@
    <wvobject type="group" fp_name="group406">
       <obj_property name="label">QB</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject type="array" fp_name="/Round_Robin_FIFO_Arbiter_t/rrfa/qb/dout">
          <obj_property name="ElementShortName">dout[7:0]</obj_property>
          <obj_property name="ObjectShortName">dout[7:0]</obj_property>

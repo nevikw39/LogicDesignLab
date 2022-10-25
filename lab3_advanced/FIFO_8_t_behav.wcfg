@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="24781fs"></ZoomEndTime>
-      <Cursor1Time time="100240fs"></Cursor1Time>
+      <ZoomEndTime time="270001fs"></ZoomEndTime>
+      <Cursor1Time time="105fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="96"></NameColumnWidth>
+      <NameColumnWidth column_width="124"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="12" />
+   <WVObjectSize size="8" />
    <wvobject type="logic" fp_name="/FIFO_8_t/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -39,35 +39,45 @@
    <wvobject type="array" fp_name="/FIFO_8_t/din">
       <obj_property name="ElementShortName">din[7:0]</obj_property>
       <obj_property name="ObjectShortName">din[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/FIFO_8_t/dout">
       <obj_property name="ElementShortName">dout[7:0]</obj_property>
       <obj_property name="ObjectShortName">dout[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/FIFO_8_t/error">
       <obj_property name="ElementShortName">error</obj_property>
       <obj_property name="ObjectShortName">error</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/FIFO_8_t/cyc">
-      <obj_property name="ElementShortName">cyc[31:0]</obj_property>
-      <obj_property name="ObjectShortName">cyc[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/FIFO_8_t/f/front">
-      <obj_property name="ElementShortName">front[2:0]</obj_property>
-      <obj_property name="ObjectShortName">front[2:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/FIFO_8_t/f/back">
-      <obj_property name="ElementShortName">back[2:0]</obj_property>
-      <obj_property name="ObjectShortName">back[2:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/FIFO_8_t/f/full">
-      <obj_property name="ElementShortName">full</obj_property>
-      <obj_property name="ObjectShortName">full</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/FIFO_8_t/f/empty">
-      <obj_property name="ElementShortName">empty</obj_property>
-      <obj_property name="ObjectShortName">empty</obj_property>
+   <wvobject type="group" fp_name="group24">
+      <obj_property name="label">Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/FIFO_8_t/fifo/queue">
+         <obj_property name="ElementShortName">queue[8:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">queue[8:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/FIFO_8_t/fifo/front">
+         <obj_property name="ElementShortName">front[3:0]</obj_property>
+         <obj_property name="ObjectShortName">front[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/FIFO_8_t/fifo/next_front">
+         <obj_property name="ElementShortName">next_front[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_front[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/FIFO_8_t/fifo/back">
+         <obj_property name="ElementShortName">back[3:0]</obj_property>
+         <obj_property name="ObjectShortName">back[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/FIFO_8_t/fifo/next_back">
+         <obj_property name="ElementShortName">next_back[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_back[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/FIFO_8_t/fifo/full">
+         <obj_property name="ElementShortName">full</obj_property>
+         <obj_property name="ObjectShortName">full</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/FIFO_8_t/fifo/empty">
+         <obj_property name="ElementShortName">empty</obj_property>
+         <obj_property name="ObjectShortName">empty</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>
