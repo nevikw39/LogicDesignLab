@@ -124,6 +124,7 @@ Bank a(clk, ra, wa, raddr[8:0], waddr[8:0], din, outa),
      c(clk, rc, wc, raddr[8:0], waddr[8:0], din, outc),
      d(clk, rd, wd, raddr[8:0], waddr[8:0], din, outd);
 
+wire [1:0] rbank, wbank;
 assign rbank = raddr[10:9], wbank = waddr[10:9];
 
 always @(*) begin
