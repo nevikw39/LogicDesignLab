@@ -44,7 +44,7 @@ always @(*) begin
             next_state = S4;
     S5:
         if (in)
-            next_state = S1;
+            next_state = S0;
         else
             next_state = S3;
     default: next_state = 3'bxxx;
