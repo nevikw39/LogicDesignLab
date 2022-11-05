@@ -1,0 +1,18 @@
+digraph dfa {
+    rankdir="LR"
+    
+    A->B[label="0"]
+    A->C[label="1"]
+    B->D[label="1"]
+    C->E[label="0"]
+    C->F[label="1"]
+    D->G[label="1"]
+    E->H[label="1"]
+    F->I[label="0"]
+    
+    node [shape="doublecircle"]
+    G->J[label="1"]
+    H->K[label="1"]
+    I->L[label="0"]
+}
+

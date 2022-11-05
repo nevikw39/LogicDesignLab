@@ -90,3 +90,7 @@
 !*.circ
 !*.png
 
+!*.dot
+!*.svg
+!*.ps
+

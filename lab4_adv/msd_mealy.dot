@@ -1,0 +1,24 @@
+digraph mealy {
+    rankdir="LR"
+    
+    A->B[label="0/0"]
+    A->C[label="1/0"]
+    B->D[label="1/0"]
+    C->D[label="0/0"]
+    C->E[label="1/0"]
+    D->F[label="1/0"]
+    E->G[label="0/0"]
+    F->A[label="1/1"]
+    G->A[label="0/1"]
+    
+    node [style="dashed"]
+    edge [style="dashed", weight=0]
+    B->H[label="0/0"]
+    H->I[label="*/0"]
+    D->I[label="0/0"]
+    E->I[label="1/0"]
+    F->A[label="0/0"]
+    G->A[label="1/0"]
+    I->A[label="*/0"]
+}
+

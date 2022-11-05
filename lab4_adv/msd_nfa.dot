@@ -1,0 +1,25 @@
+digraph nfa {
+    rankdir="LR"
+    
+    a->b[label="ϵ"]
+    b->c[label="0"]
+    c->d[label="1"]
+    d->e[label="1"]
+    e->f[label="1"]
+    a->g[label="ϵ"]
+    g->h[label="1"]
+    h->i[label="0"]
+    i->j[label="1"]
+    j->k[label="1"]
+    a->l[label="ϵ"]
+    l->m[label="1"]
+    m->n[label="1"]
+    n->o[label="0"]
+    o->p[label="0"]
+    
+    q[shape=doublecircle]
+    f->q[label="ϵ"]
+    k->q[label="ϵ"]
+    p->q[label="ϵ"]
+}
+
