@@ -30,7 +30,7 @@ always @(*) begin
     case (state)
     F: dec = in;
     G: dec = ~in;
-    default: dec <= 1'b0;
+    default: dec = 1'b0;
     endcase
 end
 
