@@ -18,6 +18,11 @@ initial begin
     $dumpvars("+all");
 end
 
+initial begin
+    @(negedge clk)
+    rst_n = 1'b1;
+end
+
 integer i;
 
 initial begin
@@ -56,7 +61,7 @@ initial begin
 
     for (i = 0; i < 16; i = i + 1) begin
         @(negedge clk)
-        rst_n = 1'b1;
+        // rst_n = 1'b1;
         in = i[0];
         @(negedge clk)
         in = i[1];
@@ -73,7 +78,7 @@ initial begin
             $display("WA!!", i[3], i[2], i[1], i[0]);
             $finish;
         end
-        rst_n = 1'b0;
+        // rst_n = 1'b0;
     end
 
     @(negedge clk)
