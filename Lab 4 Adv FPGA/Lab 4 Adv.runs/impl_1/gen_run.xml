@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1668005984">
+  <File Type="BITSTR-BMM" Name="_1A2B_fpga_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="_1A2B_fpga_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="_1A2B_fpga_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="_1A2B_fpga_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="_1A2B_fpga.tcl"/>
+  <File Type="OPT-TIMING" Name="_1A2B_fpga_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="_1A2B_fpga_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="_1A2B_fpga_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="_1A2B_fpga_reports.tcl"/>
+  <File Type="OPT-DRC" Name="_1A2B_fpga_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="_1A2B_fpga.hwdef"/>
+  <File Type="PWROPT-DCP" Name="_1A2B_fpga_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="_1A2B_fpga_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="_1A2B_fpga_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="_1A2B_fpga_placed.dcp"/>
+  <File Type="PLACE-IO" Name="_1A2B_fpga_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="_1A2B_fpga_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="_1A2B_fpga_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="_1A2B_fpga_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="_1A2B_fpga_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="_1A2B_fpga_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="_1A2B_fpga_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="_1A2B_fpga_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="_1A2B_fpga_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="_1A2B_fpga.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="_1A2B_fpga_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="_1A2B_fpga_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="_1A2B_fpga_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="_1A2B_fpga.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="_1A2B_fpga_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="_1A2B_fpga_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="_1A2B_fpga_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="_1A2B_fpga_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="_1A2B_fpga_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="_1A2B_fpga_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="_1A2B_fpga_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="_1A2B_fpga.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="_1A2B_fpga_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="_1A2B_fpga_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="_1A2B_fpga_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="_1A2B_fpga_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="_1A2B_fpga_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="_1A2B_fpga_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="_1A2B_fpga_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="_1A2B_fpga_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="_1A2B_fpga_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="_1A2B_fpga_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="_1A2B_fpga_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="_1A2B_fpga_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="_1A2B_fpga_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="_1A2B_fpga_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="_1A2B_fpga_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="_1A2B_fpga_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="_1A2B_fpga_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="_1A2B_fpga_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="_1A2B_fpga_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="_1A2B_fpga_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="_1A2B_fpga_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="_1A2B_fpga.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="_1A2B_fpga_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="_1A2B_fpga.rbt"/>
+  <File Type="BITSTR-NKY" Name="_1A2B_fpga.nky"/>
+  <File Type="PDI-FILE" Name="_1A2B_fpga.pdi"/>
+  <File Type="RCFI_FILE" Name="_1A2B_fpga.rcfi"/>
+  <File Type="CFI_FILE" Name="_1A2B_fpga.cfi"/>
+  <File Type="RNPI_FILE" Name="_1A2B_fpga.rnpi"/>
+  <File Type="NPI_FILE" Name="_1A2B_fpga.npi"/>
+  <File Type="RBD_FILE" Name="_1A2B_fpga.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="_1A2B_fpga.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="_1A2B_fpga.sysdef"/>
+  <File Type="BG-BGN" Name="_1A2B_fpga.bgn"/>
+  <File Type="BG-DRC" Name="_1A2B_fpga.drc"/>
+  <File Type="RDI-RDI" Name="_1A2B_fpga.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Lab4_Team30_1A2B_fpga.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/Lab4_Team30_Content_Addressable_Memory.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Lab4_Team30_Content_Addressable_Memory.v"/>
+        <Attr Name="ImportTime" Val="1667877247"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Downloads/Lab4_Team30_Content_Addressable_Memory_t.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Lab4_Team30_Content_Addressable_Memory_t.v"/>
+        <Attr Name="ImportTime" Val="1667879872"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="_1A2B_fpga"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Downloads/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Downloads/Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1666158607"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

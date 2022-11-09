@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Nov  9 22:59:47 2022
+# Process ID: 17676
+# Current directory: C:/Users/user/Desktop/Lab 4 Adv/Lab 4 Adv.runs/synth_1
+# Command line: vivado.exe -log _1A2B_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source _1A2B_fpga.tcl
+# Log file: C:/Users/user/Desktop/Lab 4 Adv/Lab 4 Adv.runs/synth_1/_1A2B_fpga.vds
+# Journal file: C:/Users/user/Desktop/Lab 4 Adv/Lab 4 Adv.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source _1A2B_fpga.tcl -notrace

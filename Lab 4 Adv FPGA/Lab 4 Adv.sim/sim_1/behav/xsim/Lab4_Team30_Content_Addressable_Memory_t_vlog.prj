@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab 4 Adv.srcs/sources_1/imports/Downloads/Lab4_Team30_Content_Addressable_Memory.v" \
+"../../../../Lab 4 Adv.srcs/sources_1/imports/Downloads/Lab4_Team30_Content_Addressable_Memory_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
