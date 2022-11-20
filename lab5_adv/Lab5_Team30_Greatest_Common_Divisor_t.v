@@ -39,6 +39,7 @@ initial begin
         @(negedge clk)
         a = 16'bx;
         b = 16'bx;
+        start = 1'b0;
         @(done) #1
         if (g != gcd) begin
             $display("WA!!\na = %d, b = %d; expected: %d, got: %d", a, b, g, gcd);
