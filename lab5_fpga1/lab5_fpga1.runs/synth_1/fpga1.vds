@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 22 01:32:53 2022
+# Process ID: 83859
+# Current directory: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/synth_1
+# Command line: vivado -log fpga1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga1.tcl
+# Log file: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/synth_1/fpga1.vds
+# Journal file: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source fpga1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/nevikw39/Keyboard Sample Code/ip/Keyboard-Controller'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/work/nevikw39/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top fpga1 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 84221
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 2278.996 ; gain = 0.000 ; free physical = 166323 ; free virtual = 171443
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fpga1' [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/new/Lab5_Team30_Music_fpga.v:63]
+	Parameter KEY_ENTER bound to: 9'b001011010 
+	Parameter KEY_W bound to: 9'b000011101 
+	Parameter KEY_S bound to: 9'b000011011 
+	Parameter KEY_R bound to: 9'b000101101 
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/new/Lab5_Team30_Music_fpga.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (1#1) [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/new/Lab5_Team30_Music_fpga.v:24]
+INFO: [Synth 8-6157] synthesizing module 'PWM_gen' [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Unit9_demo1_piano/PWM_gen.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'PWM_gen' (2#1) [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Unit9_demo1_piano/PWM_gen.v:10]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDecoder' [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/KeyboardDecoder.v:1]
+	Parameter INIT bound to: 2'b00 
+	Parameter WAIT_FOR_SIGNAL bound to: 2'b01 
+	Parameter GET_SIGNAL_DOWN bound to: 2'b10 
+	Parameter WAIT_RELEASE bound to: 2'b11 
+	Parameter IS_INIT bound to: 8'b10101010 
+	Parameter IS_EXTEND bound to: 8'b11100000 
+	Parameter IS_BREAK bound to: 8'b11110000 
+INFO: [Synth 8-6157] synthesizing module 'KeyboardCtrl_0' [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/synth_1/.Xil/Vivado-83859-cpn3184/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardCtrl_0' (3#1) [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/synth_1/.Xil/Vivado-83859-cpn3184/realtime/KeyboardCtrl_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'OnePulse' [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/OnePulse.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'OnePulse' (4#1) [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/OnePulse.v:1]
+INFO: [Synth 8-226] default block is never used [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/KeyboardDecoder.v:69]
+INFO: [Synth 8-226] default block is never used [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/KeyboardDecoder.v:79]
+INFO: [Synth 8-226] default block is never used [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/KeyboardDecoder.v:89]
+INFO: [Synth 8-226] default block is never used [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/KeyboardDecoder.v:99]
+INFO: [Synth 8-226] default block is never used [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/KeyboardDecoder.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDecoder' (5#1) [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/imports/nevikw39/Keyboard Sample Code/KeyboardDecoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'divided_clock' [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/new/Lab5_Team30_Music_fpga.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'divided_clock' (6#1) [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/new/Lab5_Team30_Music_fpga.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'fpga1' (7#1) [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/sources_1/new/Lab5_Team30_Music_fpga.v:63]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2278.996 ; gain = 0.000 ; free physical = 166357 ; free virtual = 171481
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2278.996 ; gain = 0.000 ; free physical = 166353 ; free virtual = 171477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2278.996 ; gain = 0.000 ; free physical = 166353 ; free virtual = 171477
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2278.996 ; gain = 0.000 ; free physical = 166345 ; free virtual = 171470
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'kd/inst'
+Finished Parsing XDC File [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc] for cell 'kd/inst'
+Parsing XDC File [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2294.949 ; gain = 0.000 ; free physical = 166183 ; free virtual = 171315
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2294.949 ; gain = 0.000 ; free physical = 166182 ; free virtual = 171314
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2294.949 ; gain = 15.953 ; free physical = 166316 ; free virtual = 171449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2294.949 ; gain = 15.953 ; free physical = 166316 ; free virtual = 171449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PS2Clk. (constraint file  /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2Clk. (constraint file  /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for PS2Data. (constraint file  /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PS2Data. (constraint file  /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0/KeyboardCtrl_0_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for kd/inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2294.949 ; gain = 15.953 ; free physical = 166316 ; free virtual = 171449
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'KeyboardDecoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                               00 |                               00
+         WAIT_FOR_SIGNAL |                               01 |                               01
+         GET_SIGNAL_DOWN |                               10 |                               10
+            WAIT_RELEASE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'KeyboardDecoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166303 ; free virtual = 171438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   8 Input    9 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP count_duty0, operation Mode is: A*B.
+DSP Report: operator count_duty0 is absorbed into DSP count_duty0.
+DSP Report: operator count_duty0 is absorbed into DSP count_duty0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166282 ; free virtual = 171420
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PWM_gen     | A*B         | 25     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166133 ; free virtual = 171272
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166128 ; free virtual = 171268
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |KeyboardCtrl_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |KeyboardCtrl |     1|
+|2     |BUFG         |     1|
+|3     |CARRY4       |   231|
+|4     |DSP48E1      |     1|
+|5     |LUT1         |     3|
+|6     |LUT2         |   432|
+|7     |LUT3         |   121|
+|8     |LUT4         |    78|
+|9     |LUT5         |    97|
+|10    |LUT6         |   273|
+|11    |FDCE         |    59|
+|12    |FDPE         |     2|
+|13    |FDRE         |    28|
+|14    |IBUF         |     2|
+|15    |OBUF         |     3|
+|16    |OBUFT        |     1|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166124 ; free virtual = 171264
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 2294.953 ; gain = 0.004 ; free physical = 166190 ; free virtual = 171330
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 2294.953 ; gain = 15.957 ; free physical = 166191 ; free virtual = 171332
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2294.953 ; gain = 0.000 ; free physical = 166276 ; free virtual = 171418
+INFO: [Netlist 29-17] Analyzing 232 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'fpga1' is not ideal for floorplanning, since the cellview 'PWM_gen' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2294.953 ; gain = 0.000 ; free physical = 166221 ; free virtual = 171366
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 2294.953 ; gain = 16.039 ; free physical = 166368 ; free virtual = 171513
+INFO: [Common 17-1381] The checkpoint '/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/synth_1/fpga1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fpga1_utilization_synth.rpt -pb fpga1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 22 01:33:47 2022...

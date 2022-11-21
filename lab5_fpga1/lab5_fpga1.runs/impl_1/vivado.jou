@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 22 01:33:51 2022
+# Process ID: 84901
+# Current directory: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1
+# Command line: vivado -log fpga1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga1.tcl -notrace
+# Log file: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1.vdi
+# Journal file: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source fpga1.tcl -notrace

@@ -1,0 +1,15 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Nov 22 01:36:20 2022
+| Host         : cpn3184 running 64-bit CentOS Linux release 7.8.2003 (Core)
+| Command      : report_bus_skew -warn_on_violation -file fpga1_bus_skew_routed.rpt -pb fpga1_bus_skew_routed.pb -rpx fpga1_bus_skew_routed.rpx
+| Design       : fpga1
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

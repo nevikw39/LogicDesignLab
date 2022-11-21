@@ -1,0 +1,1606 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Nov 22 00:24:05 2022
+# Process ID: 180850
+# Current directory: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1
+# Command line: vivado -log fpga1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fpga1.tcl -notrace
+# Log file: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1.vdi
+# Journal file: /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source fpga1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/nevikw39/Keyboard Sample Code/ip/Keyboard-Controller'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/work/nevikw39/Xilinx/Vivado/2020.2/data/ip'.
+Command: link_design -top fpga1 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.gen/sources_1/ip/KeyboardCtrl_0/KeyboardCtrl_0.dcp' for cell 'kd/inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2288.789 ; gain = 0.000 ; free physical = 237186 ; free virtual = 314064
+INFO: [Netlist 29-17] Analyzing 238 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.srcs/constrs_1/new/const.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2302.691 ; gain = 0.000 ; free physical = 237090 ; free virtual = 313969
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2302.691 ; gain = 14.027 ; free physical = 237090 ; free virtual = 313969
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2318.727 ; gain = 16.035 ; free physical = 237072 ; free virtual = 313952
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 115244ec8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2353.562 ; gain = 34.836 ; free physical = 236690 ; free virtual = 313571
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: bda9f3aa
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2527.500 ; gain = 0.004 ; free physical = 236535 ; free virtual = 313416
+INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 2 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: bda9f3aa
+
+Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2527.500 ; gain = 0.004 ; free physical = 236535 ; free virtual = 313416
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 21ceb478
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2527.500 ; gain = 0.004 ; free physical = 236535 ; free virtual = 313416
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 21ceb478
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2527.500 ; gain = 0.004 ; free physical = 236535 ; free virtual = 313416
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 21ceb478
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2527.500 ; gain = 0.004 ; free physical = 236535 ; free virtual = 313416
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 21ceb478
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2527.500 ; gain = 0.004 ; free physical = 236535 ; free virtual = 313417
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               1  |               2  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2527.500 ; gain = 0.000 ; free physical = 236535 ; free virtual = 313417
+Ending Logic Optimization Task | Checksum: 1b9d67a55
+
+Time (s): cpu = 00:00:00.30 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2527.500 ; gain = 0.004 ; free physical = 236535 ; free virtual = 313417
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1b9d67a55
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2527.500 ; gain = 0.000 ; free physical = 236535 ; free virtual = 313416
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b9d67a55
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2527.500 ; gain = 0.000 ; free physical = 236535 ; free virtual = 313416
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2527.500 ; gain = 0.000 ; free physical = 236535 ; free virtual = 313416
+Ending Netlist Obfuscation Task | Checksum: 1b9d67a55
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2527.500 ; gain = 0.000 ; free physical = 236535 ; free virtual = 313416
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2527.500 ; gain = 224.809 ; free physical = 236535 ; free virtual = 313416
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2543.453 ; gain = 5.938 ; free physical = 236530 ; free virtual = 313412
+INFO: [Common 17-1381] The checkpoint '/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file fpga1_drc_opted.rpt -pb fpga1_drc_opted.pb -rpx fpga1_drc_opted.rpx
+Command: report_drc -file fpga1_drc_opted.rpt -pb fpga1_drc_opted.pb -rpx fpga1_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236487 ; free virtual = 313372
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: c6d4353b
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236487 ; free virtual = 313372
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236487 ; free virtual = 313372
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 16cffbcf4
+
+Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236493 ; free virtual = 313380
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1993b6ccc
+
+Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236500 ; free virtual = 313389
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1993b6ccc
+
+Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236500 ; free virtual = 313389
+Phase 1 Placer Initialization | Checksum: 1993b6ccc
+
+Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.49 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236499 ; free virtual = 313389
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 22b80b715
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236492 ; free virtual = 313382
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1fe4c6411
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.75 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236492 ; free virtual = 313382
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 5 LUTNM shape to break, 2 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 1, two critical 4, total 5, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 6 nets or cells. Created 5 new cells, deleted 1 existing cell and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236471 ; free virtual = 313364
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            5  |              1  |                     6  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            5  |              1  |                     6  |           0  |           8  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 12c3959fc
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236475 ; free virtual = 313369
+Phase 2.3 Global Placement Core | Checksum: 1b03384a4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313367
+Phase 2 Global Placement | Checksum: 1b03384a4
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313367
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18cc31fd2
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313367
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19a54f010
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236468 ; free virtual = 313362
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 16533a4a7
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236466 ; free virtual = 313360
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 14b77980f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236466 ; free virtual = 313360
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1fdefd2cd
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236463 ; free virtual = 313358
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1aeda7af8
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236463 ; free virtual = 313358
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 17090ff6c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236464 ; free virtual = 313359
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 18ac51244
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236464 ; free virtual = 313359
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 271e577dc
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+Phase 3 Detail Placement | Checksum: 271e577dc
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1929814b2
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.696 | TNS=-1951.226 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1b7e08763
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236466 ; free virtual = 313362
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 26f9e9e54
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236466 ; free virtual = 313362
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1929814b2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236466 ; free virtual = 313362
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-63.191. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236466 ; free virtual = 313362
+Phase 4.1 Post Commit Optimization | Checksum: 22f1c653a
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236466 ; free virtual = 313362
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 22f1c653a
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 22f1c653a
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+Phase 4.3 Placer Reporting | Checksum: 22f1c653a
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 25e621b00
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+Ending Placer Task | Checksum: 1ae1a4281
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236467 ; free virtual = 313363
+INFO: [Common 17-83] Releasing license: Implementation
+68 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236482 ; free virtual = 313378
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2684.551 ; gain = 0.000 ; free physical = 236480 ; free virtual = 313376
+INFO: [Common 17-1381] The checkpoint '/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file fpga1_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236475 ; free virtual = 313371
+INFO: [runtcl-4] Executing : report_utilization -file fpga1_utilization_placed.rpt -pb fpga1_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file fpga1_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236479 ; free virtual = 313375
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313369
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.191 | TNS=-1934.561 |
+Phase 1 Physical Synthesis Initialization | Checksum: 21a015935
+
+Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236470 ; free virtual = 313367
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.191 | TNS=-1934.561 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 21a015935
+
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236469 ; free virtual = 313366
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.191 | TNS=-1934.561 |
+INFO: [Physopt 32-702] Processed net pwm/JB_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net tone_reg[0]. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net tone_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.158 | TNS=-1933.473 |
+INFO: [Physopt 32-81] Processed net tone_reg[2]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net tone_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.157 | TNS=-1933.439 |
+INFO: [Physopt 32-81] Processed net tone_reg[2]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net tone_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.156 | TNS=-1933.406 |
+INFO: [Physopt 32-572] Net tone_reg[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net tone_reg[2].  Did not re-place instance tone_reg[2]
+INFO: [Physopt 32-702] Processed net tone_reg[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net pwm/PWM_i_31_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.143 | TNS=-1933.393 |
+INFO: [Physopt 32-735] Processed net pwm/PWM_i_32_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-63.030 | TNS=-1933.280 |
+INFO: [Physopt 32-735] Processed net pwm/PWM_i_24_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.923 | TNS=-1933.173 |
+INFO: [Physopt 32-735] Processed net pwm/PWM_i_29_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.878 | TNS=-1933.128 |
+INFO: [Physopt 32-735] Processed net pwm/PWM_i_30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.828 | TNS=-1933.078 |
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net pwm/PWM_i_1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.721 | TNS=-1932.971 |
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_205_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_338_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_486_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_672_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_834_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_932_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_993_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1033_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_200_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_333_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_481_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_667_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_829_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_927_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1028_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_80_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_195_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_328_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_476_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_662_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_824_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_922_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_983_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1024_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_77_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_190_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_323_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_471_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_657_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_819_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_917_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_978_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_185_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_318_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_466_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_652_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_814_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_912_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_973_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_180_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_313_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_461_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_647_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_809_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_907_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_968_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1012_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_308_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_456_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_642_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_804_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_902_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_963_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1008_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_170_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_451_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_637_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_799_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_897_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_958_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_65_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_65_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_298_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_446_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_632_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_794_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_892_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_953_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_61_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_160_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_293_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_441_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_627_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_789_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_887_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_952_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_58_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_288_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_436_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_622_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_784_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_882_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_150_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_283_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_431_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_617_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_779_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_877_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_944_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_55_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_55_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_145_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_278_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_426_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_612_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_774_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_872_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_940_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_273_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_607_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_772_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_268_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_416_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_602_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_764_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_868_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_263_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_411_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_597_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_759_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_863_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_45_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_125_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_258_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_406_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_592_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_754_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_253_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_401_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_587_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_753_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_248_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_396_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_582_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_749_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_243_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_391_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_577_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_746_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_35_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_238_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_386_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_6[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.718 | TNS=-1932.872 |
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[4]_2[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.715 | TNS=-1932.774 |
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_31_0[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.687 | TNS=-1931.849 |
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_572_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_742_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_100_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_233_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_381_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_228_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_376_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_568_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_210_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_343_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_89_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_90_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_211_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_344_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_496_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count[31]_i_36_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_216_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_221_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_349_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_513_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_reg[31]_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net dec/count[31]_i_47_n_0.  Did not re-place instance dec/count[31]_i_47
+INFO: [Physopt 32-735] Processed net dec/count[31]_i_47_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.571 | TNS=-1928.021 |
+INFO: [Physopt 32-702] Processed net count_duty0_i_361_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net count_duty0_i_542_n_0.  Did not re-place instance count_duty0_i_542
+INFO: [Physopt 32-735] Processed net count_duty0_i_542_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.561 | TNS=-1927.691 |
+INFO: [Physopt 32-662] Processed net dec/count[31]_i_47_n_0.  Did not re-place instance dec/count[31]_i_47
+INFO: [Physopt 32-702] Processed net dec/count[31]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_5 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_5.  Did not re-place instance pwm/count_duty0_i_358
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_5 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[3]_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_13.  Did not re-place instance pwm/count_duty0_i_524
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[3]_5. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_358_comp.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_13. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.553 | TNS=-1927.427 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_543_n_0.  Did not re-place instance count_duty0_i_543
+INFO: [Physopt 32-702] Processed net count_duty0_i_543_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net count_duty0_i_723_n_0.  Did not re-place instance count_duty0_i_723
+INFO: [Physopt 32-572] Net count_duty0_i_723_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net count_duty0_i_723_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_4 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_4.  Did not re-place instance pwm/count_duty0_i_356
+INFO: [Physopt 32-710] Processed net count_duty0_i_723_n_0. Critical path length was reduced through logic transformation on cell count_duty0_i_723_comp.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.540 | TNS=-1926.998 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_544_n_0.  Did not re-place instance count_duty0_i_544
+INFO: [Physopt 32-702] Processed net count_duty0_i_544_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_0.  Did not re-place instance pwm/count_duty0_i_507
+INFO: [Physopt 32-710] Processed net count_duty0_i_544_n_0. Critical path length was reduced through logic transformation on cell count_duty0_i_544_comp.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.540 | TNS=-1926.998 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[1].  Did not re-place instance pwm/count_duty0_i_504
+INFO: [Physopt 32-572] Net pwm/tone_reg[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_519_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_519_0.  Did not re-place instance pwm/count_duty0_i_371
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[1]. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_504_comp.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_519_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.503 | TNS=-1925.777 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[0]_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[0]_0.  Did not re-place instance pwm/count_duty0_i_503
+INFO: [Physopt 32-572] Net pwm/tone_reg[0]_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_525_n_0.  Did not re-place instance pwm/count_duty0_i_525
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[0]_0. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_503_comp.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_525_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.484 | TNS=-1925.150 |
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_13_repN.  Did not re-place instance pwm/count_duty0_i_524_comp
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[3]_13_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_557 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_557.  Did not re-place instance pwm/count_duty0_i_520
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[3]_13_repN. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_524_comp_1.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_557. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.480 | TNS=-1925.018 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_542_n_0.  Did not re-place instance count_duty0_i_542
+INFO: [Physopt 32-702] Processed net count_duty0_i_542_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net count_duty0_i_722_n_0.  Did not re-place instance count_duty0_i_722
+INFO: [Physopt 32-572] Net count_duty0_i_722_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net count_duty0_i_722_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_519_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_519_0.  Did not re-place instance pwm/count_duty0_i_371
+INFO: [Physopt 32-710] Processed net count_duty0_i_722_n_0. Critical path length was reduced through logic transformation on cell count_duty0_i_722_comp.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_519_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.480 | TNS=-1925.018 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3].  Did not re-place instance pwm/count_duty0_i_506
+INFO: [Physopt 32-572] Net pwm/tone_reg[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_14 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_14.  Did not re-place instance pwm/count_duty0_i_528
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[3]. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_506_comp.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_14. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.404 | TNS=-1922.510 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_4 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_4.  Did not re-place instance pwm/count_duty0_i_356
+INFO: [Physopt 32-710] Processed net count_duty0_i_544_n_0. Critical path length was reduced through logic transformation on cell count_duty0_i_544_comp_1.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.403 | TNS=-1922.477 |
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_557 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_557.  Did not re-place instance pwm/count_duty0_i_520
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[0]_0. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_503_comp_1.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_557. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.401 | TNS=-1922.411 |
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_525_n_0.  Did not re-place instance pwm/count_duty0_i_525
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[3]_5. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_358_comp_1.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_525_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.377 | TNS=-1921.619 |
+INFO: [Physopt 32-735] Processed net count_duty0_i_546_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.367 | TNS=-1921.289 |
+INFO: [Physopt 32-663] Processed net pwm/tone_reg[3]_4_repN_1.  Re-placed instance pwm/count_duty0_i_356_comp_1
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_4_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.360 | TNS=-1921.058 |
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_557 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_557.  Did not re-place instance pwm/count_duty0_i_520
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_557. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_714_n_0.  Did not re-place instance pwm/count_duty0_i_714
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_714_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_714_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.358 | TNS=-1920.992 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_2.  Did not re-place instance pwm/count_duty0_i_497
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.350 | TNS=-1920.728 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_2.  Did not re-place instance pwm/count_duty0_i_497
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[3]_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_525_n_0.  Did not re-place instance pwm/count_duty0_i_525
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_525_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_525_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[4]_9 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[4]_9.  Did not re-place instance pwm/count_duty0_i_519
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[4]_9. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_708_n_0.  Did not re-place instance pwm/count_duty0_i_708
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[4]_9. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_519_comp.
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_708_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.343 | TNS=-1920.497 |
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_714_n_0.  Did not re-place instance pwm/count_duty0_i_714
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_714_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_714_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/w10_out[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_710_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_558_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_711_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_372_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_565_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_n_92. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/JB_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net tone_reg[2].  Did not re-place instance tone_reg[2]
+INFO: [Physopt 32-702] Processed net tone_reg[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1033_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1028_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1024_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1012_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1008_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_65_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_952_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_944_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_55_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_940_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_772_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_868_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_863_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_45_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_753_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_749_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_746_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_35_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_742_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_568_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_496_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count[31]_i_36_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_513_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net dec/count[31]_i_47_n_0.  Did not re-place instance dec/count[31]_i_47
+INFO: [Physopt 32-702] Processed net dec/count[31]_i_47_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_5.  Did not re-place instance pwm/count_duty0_i_358_comp_1
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.331 | TNS=-1920.101 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_543_n_0.  Did not re-place instance count_duty0_i_543
+INFO: [Physopt 32-702] Processed net count_duty0_i_543_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net count_duty0_i_723_n_0.  Re-placed instance count_duty0_i_723_comp
+INFO: [Physopt 32-735] Processed net count_duty0_i_723_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.328 | TNS=-1920.002 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_723_n_0.  Did not re-place instance count_duty0_i_723_comp
+INFO: [Physopt 32-735] Processed net count_duty0_i_723_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.322 | TNS=-1919.804 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_542_n_0.  Did not re-place instance count_duty0_i_542
+INFO: [Physopt 32-702] Processed net count_duty0_i_542_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_3.  Did not re-place instance pwm/count_duty0_i_500
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[3]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net pwm/tone_reg[3]_4.  Re-placed instance pwm/count_duty0_i_356
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.321 | TNS=-1919.771 |
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_2.  Did not re-place instance pwm/count_duty0_i_497
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.307 | TNS=-1919.309 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_544_n_0.  Did not re-place instance count_duty0_i_544_comp_1
+INFO: [Physopt 32-735] Processed net count_duty0_i_544_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.300 | TNS=-1919.078 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_544_n_0.  Did not re-place instance count_duty0_i_544_comp_1
+INFO: [Physopt 32-735] Processed net count_duty0_i_544_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.295 | TNS=-1918.913 |
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[2].  Did not re-place instance pwm/count_duty0_i_499
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_519_0.  Did not re-place instance pwm/count_duty0_i_371
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_519_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net pwm/count_duty0_i_561_n_0.  Re-placed instance pwm/count_duty0_i_561
+INFO: [Physopt 32-735] Processed net pwm/count_duty0_i_561_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.287 | TNS=-1918.649 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_549_n_0.  Did not re-place instance count_duty0_i_549
+INFO: [Physopt 32-702] Processed net count_duty0_i_549_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[2]_1.  Did not re-place instance pwm/count_duty0_i_701
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[2]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.285 | TNS=-1918.583 |
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[2]_1.  Did not re-place instance pwm/count_duty0_i_701
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[2]_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[4]_9.  Did not re-place instance pwm/count_duty0_i_519_comp
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[4]_9. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_708_n_0.  Did not re-place instance pwm/count_duty0_i_708_comp
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_708_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/w10_out[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_565_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_n_92. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.285 | TNS=-1918.583 |
+Phase 3 Critical Path Optimization | Checksum: 21a015935
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:00:42 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313371
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.285 | TNS=-1918.583 |
+INFO: [Physopt 32-702] Processed net pwm/JB_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net tone_reg[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net tone_reg[2].  Did not re-place instance tone_reg[2]
+INFO: [Physopt 32-702] Processed net tone_reg[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_86_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_205_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_338_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_486_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_672_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_834_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_932_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_993_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1033_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_200_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_333_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_481_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_667_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_829_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_927_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_988_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1028_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_80_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_195_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_328_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_476_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_662_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_824_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_922_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_983_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1024_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_77_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_190_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_323_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_471_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_657_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_819_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_917_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_978_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_74_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_185_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_318_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_466_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_652_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_814_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_912_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_973_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_180_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_313_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_461_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_647_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_809_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_907_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_968_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1012_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_68_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_175_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_308_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_456_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_642_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_804_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_902_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_963_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1008_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_66_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_170_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_303_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_451_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_637_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_799_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_897_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_958_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_65_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_65_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_298_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_446_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_632_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_794_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_892_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_953_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_61_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_160_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_293_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_441_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_627_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_789_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_887_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_952_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_58_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_155_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_288_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_436_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_622_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_784_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_882_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_150_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_283_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_431_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_617_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_779_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_877_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_944_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_55_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_55_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_145_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_278_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_426_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_612_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_774_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_872_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_940_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_51_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_140_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_273_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_421_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_607_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_772_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_48_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_135_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_268_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_416_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_602_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_764_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_868_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_130_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_263_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_411_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_597_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_759_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_863_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_45_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_45_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_125_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_258_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_406_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_592_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_754_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_41_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_120_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_253_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_401_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_587_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_753_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_38_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_115_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_248_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_396_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_582_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_749_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_110_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_243_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_391_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_577_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_746_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_35_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_35_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_238_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_386_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_572_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_742_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_100_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_233_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_381_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_95_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_228_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_376_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_568_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_88_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_210_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_343_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_89_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_90_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_211_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_344_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_496_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count[31]_i_36_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_216_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_221_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_349_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_513_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_reg[31]_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net count_duty0_i_361_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net count_duty0_i_366_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net count_duty0_i_549_n_0.  Did not re-place instance count_duty0_i_549
+INFO: [Physopt 32-702] Processed net count_duty0_i_549_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[2]_1.  Did not re-place instance pwm/count_duty0_i_701
+INFO: [Physopt 32-572] Net pwm/tone_reg[2]_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[2]_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[4]_9 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[4]_9.  Did not re-place instance pwm/count_duty0_i_519_comp
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[2]_1. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_701_comp.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[4]_9. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.261 | TNS=-1917.791 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_544_n_0.  Did not re-place instance count_duty0_i_544_comp_1
+INFO: [Physopt 32-702] Processed net count_duty0_i_544_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-663] Processed net pwm/tone_reg[3].  Re-placed instance pwm/count_duty0_i_506_comp
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.259 | TNS=-1917.725 |
+INFO: [Physopt 32-662] Processed net count_duty0_i_542_n_0.  Did not re-place instance count_duty0_i_542
+INFO: [Physopt 32-702] Processed net count_duty0_i_542_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_3 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_3.  Did not re-place instance pwm/count_duty0_i_500
+INFO: [Physopt 32-81] Processed net pwm/tone_reg[3]_3. Replicated 5 times.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.236 | TNS=-1916.966 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_2.  Did not re-place instance pwm/count_duty0_i_497
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[3]_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net pwm/tone_reg[3]_14 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[3]_14.  Did not re-place instance pwm/count_duty0_i_528
+INFO: [Physopt 32-710] Processed net pwm/tone_reg[3]_2. Critical path length was reduced through logic transformation on cell pwm/count_duty0_i_497_comp.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[3]_14. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.228 | TNS=-1916.702 |
+INFO: [Physopt 32-572] Net pwm/tone_reg[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[2].  Did not re-place instance pwm/count_duty0_i_499
+INFO: [Physopt 32-81] Processed net pwm/tone_reg[2]. Replicated 13 times.
+INFO: [Physopt 32-735] Processed net pwm/tone_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.227 | TNS=-1916.669 |
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_557 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_557.  Did not re-place instance pwm/count_duty0_i_520
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_557. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_714_n_0.  Did not re-place instance pwm/count_duty0_i_714
+INFO: [Physopt 32-572] Net pwm/count_duty0_i_714_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_714_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/w10_out[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_710_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_558_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_711_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_372_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_565_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_n_92. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/JB_OBUF[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net tone_reg[2].  Did not re-place instance tone_reg[2]
+INFO: [Physopt 32-702] Processed net tone_reg[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_reg_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/PWM_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1033_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1028_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1024_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1020_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1016_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1012_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1008_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_1004_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_65_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_952_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_948_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_944_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_55_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_940_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_772_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_868_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_863_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_45_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_753_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[18]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_749_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[19]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_746_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_35_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_742_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_34_0[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_571_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[22]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_568_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_max[23]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_496_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count[31]_i_36_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_513_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_max__0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net count_duty0_i_549_n_0.  Did not re-place instance count_duty0_i_549
+INFO: [Physopt 32-702] Processed net count_duty0_i_549_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/tone_reg[2]_1.  Did not re-place instance pwm/count_duty0_i_701_comp
+INFO: [Physopt 32-702] Processed net pwm/tone_reg[2]_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_557.  Did not re-place instance pwm/count_duty0_i_520
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_557. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net pwm/count_duty0_i_714_n_0.  Did not re-place instance pwm/count_duty0_i_714
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_i_714_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/w10_out[17]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net dec/count_duty0_i_565_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net pwm/count_duty0_n_92. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-62.227 | TNS=-1916.669 |
+Phase 4 Critical Path Optimization | Checksum: 21a015935
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:00 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313371
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313371
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-62.227 | TNS=-1916.669 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.964  |         17.892  |           22  |              0  |                    44  |           0  |           2  |  00:00:60  |
+|  Total          |          0.964  |         17.892  |           22  |              0  |                    44  |           0  |           3  |  00:00:60  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313371
+Ending Physical Synthesis Task | Checksum: 1a8ae7ebf
+
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:00 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236473 ; free virtual = 313371
+INFO: [Common 17-83] Releasing license: Implementation
+923 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:02:36 ; elapsed = 00:01:00 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236474 ; free virtual = 313372
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2684.555 ; gain = 0.000 ; free physical = 236470 ; free virtual = 313368
+INFO: [Common 17-1381] The checkpoint '/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 60239acc ConstDB: 0 ShapeSum: 5c19272f RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 11b1e80bc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2704.363 ; gain = 0.000 ; free physical = 236358 ; free virtual = 313257
+Post Restoration Checksum: NetGraph: 70d04255 NumContArr: aa4e3e67 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 11b1e80bc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2704.363 ; gain = 0.000 ; free physical = 236358 ; free virtual = 313257
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 11b1e80bc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2718.359 ; gain = 13.996 ; free physical = 236324 ; free virtual = 313224
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 11b1e80bc
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2718.359 ; gain = 13.996 ; free physical = 236324 ; free virtual = 313224
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 144d9c376
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2736.359 ; gain = 31.996 ; free physical = 236315 ; free virtual = 313216
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-60.029| TNS=-1842.185| WHS=-0.117 | THS=-3.340 |
+
+Phase 2 Router Initialization | Checksum: 145179caa
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2736.359 ; gain = 31.996 ; free physical = 236315 ; free virtual = 313216
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 1413
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 1413
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 145179caa
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2736.359 ; gain = 31.996 ; free physical = 236312 ; free virtual = 313213
+Phase 3 Initial Routing | Checksum: d495ab97
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 2736.359 ; gain = 31.996 ; free physical = 236314 ; free virtual = 313215
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 621
+ Number of Nodes with overlaps = 192
+ Number of Nodes with overlaps = 79
+ Number of Nodes with overlaps = 57
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 22
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-67.017| TNS=-2076.729| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 143c9b1ab
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2736.359 ; gain = 31.996 ; free physical = 236307 ; free virtual = 313209
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 348
+ Number of Nodes with overlaps = 192
+ Number of Nodes with overlaps = 129
+ Number of Nodes with overlaps = 65
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-67.573| TNS=-2096.133| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2279b2caf
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 2741.359 ; gain = 36.996 ; free physical = 236309 ; free virtual = 313212
+Phase 4 Rip-up And Reroute | Checksum: 2279b2caf
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 2741.359 ; gain = 36.996 ; free physical = 236309 ; free virtual = 313212
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 222b85b79
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 2741.359 ; gain = 36.996 ; free physical = 236309 ; free virtual = 313212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-67.017| TNS=-2076.729| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1f10473d9
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1f10473d9
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+Phase 5 Delay and Skew Optimization | Checksum: 1f10473d9
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:18 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1eb83f5ae
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-67.017| TNS=-2076.729| WHS=0.145  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1eb83f5ae
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+Phase 6 Post Hold Fix | Checksum: 1eb83f5ae
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.37009 %
+  Global Horizontal Routing Utilization  = 0.599818 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 45.9459%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 64.8649%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 58.8235%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 42.6471%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 1e410532e
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1e410532e
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 199750201
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-67.017| TNS=-2076.729| WHS=0.145  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 199750201
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236253 ; free virtual = 313155
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:19 . Memory (MB): peak = 2886.359 ; gain = 181.996 ; free physical = 236328 ; free virtual = 313230
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+941 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 2886.359 ; gain = 201.805 ; free physical = 236328 ; free virtual = 313230
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2886.359 ; gain = 0.000 ; free physical = 236328 ; free virtual = 313230
+INFO: [Common 17-1381] The checkpoint '/home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file fpga1_drc_routed.rpt -pb fpga1_drc_routed.pb -rpx fpga1_drc_routed.rpx
+Command: report_drc -file fpga1_drc_routed.rpt -pb fpga1_drc_routed.pb -rpx fpga1_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file fpga1_methodology_drc_routed.rpt -pb fpga1_methodology_drc_routed.pb -rpx fpga1_methodology_drc_routed.rpx
+Command: report_methodology -file fpga1_methodology_drc_routed.rpt -pb fpga1_methodology_drc_routed.pb -rpx fpga1_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/nevikw39/LogicDesignLab/lab5_fpga1/lab5_fpga1.runs/impl_1/fpga1_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file fpga1_power_routed.rpt -pb fpga1_power_summary_routed.pb -rpx fpga1_power_routed.rpx
+Command: report_power -file fpga1_power_routed.rpt -pb fpga1_power_summary_routed.pb -rpx fpga1_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+953 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file fpga1_route_status.rpt -pb fpga1_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file fpga1_timing_summary_routed.rpt -pb fpga1_timing_summary_routed.pb -rpx fpga1_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file fpga1_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file fpga1_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file fpga1_bus_skew_routed.rpt -pb fpga1_bus_skew_routed.pb -rpx fpga1_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 22 00:26:11 2022...
