@@ -2,9 +2,9 @@
 
 module Booth_Multiplier_4bit_t;
 reg clk = 1'b0, rst_n, start;
-reg [3:0] a, b;
-reg [7:0] prod;
-wire [7:0] p;
+reg signed [3:0] a, b;
+reg signed [7:0] prod;
+wire signed [7:0] p;
 
 // specify duration of a clock cycle.
 localparam cyc = 10;
@@ -31,7 +31,7 @@ initial begin
         $display("Open file failed!!\n");
         $finish;
     end
-    while (~eof) begin
+    repeat (256) begin
         @(negedge clk)
         rst_n = 1'b1;
         eof = $fscanf(f, "%d%d%d", a, b, prod);
