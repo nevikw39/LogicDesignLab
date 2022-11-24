@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../../Lab 5 fpga vending.gen/sources_1/ip/KeyboardCtrl_0/src/Ps2Interface.v" \
+"../../../../Lab 5 fpga vending.gen/sources_1/ip/KeyboardCtrl_0/src/KeyboardCtrl.v" \
+"../../../../Lab 5 fpga vending.gen/sources_1/ip/KeyboardCtrl_0/sim/KeyboardCtrl_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
