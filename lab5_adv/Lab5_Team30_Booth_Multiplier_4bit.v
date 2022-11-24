@@ -7,27 +7,29 @@ input start;
 input signed [3:0] a, b;
 output reg signed [7:0] p;
 
+wire [4:0] A = a;
+
 localparam WAIT = 2'd0, CAL = 2'd1, FINISH = 2'd2;
 reg [1:0] state, next_state, cnt, next_cnt;
 
 // Combinatorial Circuit
 
-reg [8:0] add, sub, prod, next_add, next_sub, next_prod;
+reg signed [9:0] add, sub, prod, next_add, next_sub, next_prod;
 always @(*)
     case (state)
         WAIT: begin
-            next_add = {a, 5'd0};
-            next_sub = {-a, 5'd0};
-            next_prod = {4'd0, b, 1'd0};
+            next_add = {A, 5'd0};
+            next_sub = {-A, 5'd0};
+            next_prod = {1'd0, b, 1'd0};
             next_cnt = 2'd3;
         end
         CAL: begin
             next_add = add;
             next_sub = sub;
             case (prod[1:0])
-                2'b01: next_prod = prod + add <<< 1;
-                2'b10: next_prod = prod + sub <<< 1;
-                default: next_prod = prod <<< 1;
+                2'b01: next_prod = prod + add >>> 1;
+                2'b10: next_prod = prod + sub >>> 1;
+                default: next_prod = prod >>> 1;
             endcase
             next_cnt = cnt ? cnt - 2'b1 : 2'b1;
         end
@@ -70,6 +72,7 @@ always @(posedge clk) begin
     state <= next_state;
     add <= next_add;
     sub <= next_sub;
+    prod <= next_prod;
     cnt <= next_cnt;
 end
 
