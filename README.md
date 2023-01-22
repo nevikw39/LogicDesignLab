@@ -8,6 +8,6 @@
 | 3   | [Sequential Circuits](https://www.overleaf.com/read/dvgqsmwczqvs)         | $67.4$     |
 | 4   | [Finite State Machines](https://www.overleaf.com/read/rhkyrmdncsbx)       | $91$       |
 | 5   | [Keyboard and Audio Modules](https://www.overleaf.com/read/jqkjmpkgmgdg)  | $93$[^*]   |
-| 6   | [Peripheral Components](https://www.overleaf.com/read/cnhmvxjzybmn)       | N/A        |
+| 6   | [Peripheral Components](https://www.overleaf.com/read/cnhmvxjzybmn)       | $84$       |
 
 [^*]: Bonus included.
